@@ -1,0 +1,114 @@
+doctype html
+html(lang="ru-Ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title ИнвестБанк
+
+		include includes/link.pug
+
+	body
+		header
+			include includes/header.pug
+
+		main
+			section.bread-crumbs
+				.container
+					ul.bread-crumbs__list
+						li.bread-crumbs__item
+							a.bread-crumbs__link(href="#") Главная
+						li.bread-crumbs__item
+							a.bread-crumbs__link(href="#") Частным клиентам
+						li.bread-crumbs__item
+							a.bread-crumbs__link(href="#") Акции
+						li.bread-crumbs__item
+							span.bread-crumbs__link Кешбэк от VISA Classic
+
+			section.page-content
+				.container
+					.row-title
+						.date
+							span.date__number 30
+							span.date__month декабря
+						h2.title Кешбэк от VISA Classic!&nbsp;&nbsp;<span class="title__line">&#8212;</span>
+
+				section.center-wrapper
+					.container
+						.area-text-page
+							picture
+								source(srcset="img/offer2.webp" type="image/webp")
+								source(srcset="img/offer2.jpg" type="image/jpeg")
+								img(src="img/offer2.jpg")
+							p ЮГ-Инвестбанк (ПАО) предлагает широкую номенклатуру мерных слитков из золота 5, 10, 20 и 1000 граммов. Мерные слитки — слитки драгоценных металлов массой от 1 грамма до 1000 граммов чистотой не ниже 999,9 долей химически чистого металла на 1000 долей лигатурной массы. Слитки большей массы называются стандартными.
+							p Все предлагаемые слитки изготовлены и маркированы в соответствии с отраслевыми стандартами российскими аффинажными предприятиями и содержат химически чистого основного металла не менее 99,99% лигатурной массы слитка. Вместе со слитком покупателю передается сертификат завода-изготовителя с указанием пробы, номера и массы мерного слитка.
+							p Слитки драгоценных металлов являются одним из инструментов инвестирования средств, способом накопления ценностей, материалом для изготовления ювелирных изделий. Слитки можно дарить, вкладывать на специальные счета в банк, покупать и продавать, использовать в качестве залогового имущества, передавать по наследству.
+							p Чтобы приобрести слиток физическому лицу достаточно иметь с собой документ, удостоверяющий личность и необходимую сумму рублей.
+
+				section.row-link
+					.container
+						a.link-back(href="#")
+							.link-back__arrow
+								svg
+									use(xlink:href="img/sprite.svg#arrow")
+							span назад к списку	
+
+
+			section.down-sect.gray
+				.container
+					.down-sect__grid
+						.down-sect__wrap
+							.currency-rates
+								.currency-rates__left
+									h3.currency-rates__caption Курсы валют
+									span.currency-rates__subtitle Курс актуален на 11:50, 20.03.2020
+								.currency-rates__right
+									.currency-rates-table
+										//- .currency-rates-table__row-caption
+
+
+										.currency-rates-table__row
+											span.currency-rates-table__name USD
+											.currency-rates-table__wrap
+												span.currency-rates-table__caption Покупка
+												.currency-rates-table__val
+													span 74.90
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--down
+														use(xlink:href="img/sprite.svg#arrow-down")
+											.currency-rates-table__wrap
+												span.currency-rates-table__caption Продажа
+												.currency-rates-table__val
+													span 82.95
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--down
+														use(xlink:href="img/sprite.svg#arrow-down")
+										.currency-rates-table__row
+											span.currency-rates-table__name EUR
+											.currency-rates-table__wrap
+												.currency-rates-table__val
+													span 80.65
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--up
+														use(xlink:href="img/sprite.svg#arrow-down")
+											.currency-rates-table__wrap
+												.currency-rates-table__val
+													span 88.75
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--up
+														use(xlink:href="img/sprite.svg#arrow-down")
+
+						.down-sect__wrap
+							.contact-block
+								.contact-block__wrapper
+									h3.contact-block__title Контакты
+									.contact-block__wrap
+										a.contact-block__tel(href="tel:+78612596656") +7 (861) 259-66-56
+										button.btn-block.btn-block--three
+											span.btn-block__text заказать звонок
+										span.contact-block__caption Адрес центрального отделения
+										p.contact-block__text 350000, г. Краснодар, ул. Красная, 113
+
+
+		footer
+			include includes/footer.pug
+
+
+
+
+		include includes/script.pug

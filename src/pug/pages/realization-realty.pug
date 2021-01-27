@@ -1,0 +1,259 @@
+doctype html
+html(lang="ru-Ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title ИнвестБанк
+
+		include includes/link.pug
+		link(rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css")
+
+	body
+		header
+			include includes/header.pug
+
+		main
+			section.bread-crumbs
+				.container
+					ul.bread-crumbs__list
+						li.bread-crumbs__item
+							a.bread-crumbs__link(href="#") Главная
+						li.bread-crumbs__item
+							a.bread-crumbs__link(href="#") Реализация имущества
+						li.bread-crumbs__item
+							a.bread-crumbs__link(href="#") Жилая недвижимость
+						li.bread-crumbs__item
+							span.bread-crumbs__link 2-этажный жилой дом 157,4 кв.м.
+
+			section.inner-post
+				.container
+					.row-title
+						h2.title 2-этажный жилой дом 157,4 кв.м.&nbsp;&nbsp;<span class="title__line">&#8212;</span>
+					.inner-post__wrapper
+						.inner-post__wrap-slider
+							.post-inner.post-inner--change
+								.post-inner-slider
+									.post-inner-slider__up.swiper-container.gallery-top
+										.post-inner-slider__wrap.swiper-wrapper
+											.post-inner-slider__slide-lg.swiper-slide
+												img.post-inner-slider__img-lg(src="img/post-inner-slider-img1.jpg")
+											.post-inner-slider__slide-lg.swiper-slide
+												img.post-inner-slider__img-lg(src="img/post-inner-slider-img1.jpg")
+											.post-inner-slider__slide-lg.swiper-slide
+												img.post-inner-slider__img-lg(src="img/post-inner-slider-img1.jpg")
+											.post-inner-slider__slide-lg.swiper-slide
+												img.post-inner-slider__img-lg(src="img/post-inner-slider-img1.jpg")
+											.post-inner-slider__slide-lg.swiper-slide
+												img.post-inner-slider__img-lg(src="img/post-inner-slider-img1.jpg")
+											.post-inner-slider__slide-lg.swiper-slide
+												img.post-inner-slider__img-lg(src="img/post-inner-slider-img1.jpg")
+
+									.post-inner-slider__down.swiper-container.gallery-thumbs
+										.post-inner-slider__column.swiper-wrapper
+											.post-inner-slider__slide-sm.swiper-slide
+												img.post-inner-slider__img-sm(src="img/post-inner-slider-sm-img1.jpg")
+											.post-inner-slider__slide-sm.swiper-slide
+												img.post-inner-slider__img-sm(src="img/post-inner-slider-sm-img1.jpg")
+											.post-inner-slider__slide-sm.swiper-slide
+												img.post-inner-slider__img-sm(src="img/post-inner-slider-sm-img1.jpg")
+											.post-inner-slider__slide-sm.swiper-slide
+												img.post-inner-slider__img-sm(src="img/post-inner-slider-sm-img1.jpg")
+											.post-inner-slider__slide-sm.swiper-slide
+												img.post-inner-slider__img-sm(src="img/post-inner-slider-sm-img1.jpg")
+											.post-inner-slider__slide-sm.swiper-slide
+												img.post-inner-slider__img-sm(src="img/post-inner-slider-sm-img1.jpg")
+
+											.post-inner-slider__slide-sm.post-inner-slider__slide-sm--value
+												a.post-inner-slider__item(href="javascript:;")
+													.post-inner-slider__number-wrap еще +
+														span.post-inner-slider__number
+
+
+						.inner-post__wrap-info
+							span.inner-post__price 3 500 000 ₽
+							span.inner-post__address Адыгея, Тахтамукайский р-н, пгт. Яблоновский, ул. Кубанская Набережная, д.2
+							table.inner-post__table
+								tr
+									td Площадь
+									td 157,4 кв.м.
+								tr
+									td Год постройки
+									td 2014
+								tr
+									td Площадь участка
+									td 300 кв.м.
+							.inner-post__info-area
+								p 2-этажный жилой дом общей площадью 157,4 кв.м. Дом состоит из 4 жилых комнат, большой кухни&#8209;столовой (41,7 кв.м.)
+								p Дом с выходом на террасу. Имеется два санузла на каждом этаже. Газоснабжение, водопровод — центральные. Канализация — автономная. Дом расположен в новом коттеджном поселке, недалеко от р.Кубань.
+								p Категория земель: Земли населенных пунктов —для индивидуального жилищного строительства
+								p Кадастровый номер: 01:05:3009003:784
+
+
+						.inner-post__wrap-content
+							.accordion-wrapper.accordion-wrapper--sm-offset
+								.accordion
+									.accordion__up
+										h3.accordion__title График торгов
+										.accordion__arrow
+											svg
+												use(xlink:href="img/sprite.svg#arrow")
+									.accordion__content
+										.bargaining
+											span.bargaining__data Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b>
+											.bargaining__row
+												span.bargaining__caption Цена реализации
+												span.bargaining__price 1 189 331,14 ₽
+										.bargaining
+											span.bargaining__data Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b>
+											.bargaining__row
+												span.bargaining__caption Цена реализации
+												span.bargaining__price 1 189 331,14 ₽
+										.bargaining
+											span.bargaining__data Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b>
+											.bargaining__row
+												span.bargaining__caption Цена реализации
+												span.bargaining__price 1 189 331,14 ₽
+										.bargaining
+											span.bargaining__data Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b>
+											.bargaining__row
+												span.bargaining__caption Цена реализации
+												span.bargaining__price 1 189 331,14 ₽
+										.bargaining
+											span.bargaining__data Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b>
+											.bargaining__row
+												span.bargaining__caption Цена реализации
+												span.bargaining__price 1 189 331,14 ₽
+
+								.accordion
+									.accordion__up
+										h3.accordion__title Правила подачи заявок
+										.accordion__arrow
+											svg
+												use(xlink:href="img/sprite.svg#arrow")
+									.accordion__content
+										.bargaining
+											span.bargaining__data Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b>
+											.bargaining__row
+												span.bargaining__caption Цена реализации
+												span.bargaining__price 1 189 331,14 ₽
+										.bargaining
+											span.bargaining__data Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b>
+											.bargaining__row
+												span.bargaining__caption Цена реализации
+												span.bargaining__price 1 189 331,14 ₽
+										.bargaining
+											span.bargaining__data Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b>
+											.bargaining__row
+												span.bargaining__caption Цена реализации
+												span.bargaining__price 1 189 331,14 ₽
+										.bargaining
+											span.bargaining__data Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b>
+											.bargaining__row
+												span.bargaining__caption Цена реализации
+												span.bargaining__price 1 189 331,14 ₽
+										.bargaining
+											span.bargaining__data Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b>
+											.bargaining__row
+												span.bargaining__caption Цена реализации
+												span.bargaining__price 1 189 331,14 ₽
+
+								.accordion
+									.accordion__up
+										h3.accordion__title Документы
+										.accordion__arrow
+											svg
+												use(xlink:href="img/sprite.svg#arrow")
+									.accordion__content
+										.bargaining
+											span.bargaining__data Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b>
+											.bargaining__row
+												span.bargaining__caption Цена реализации
+												span.bargaining__price 1 189 331,14 ₽
+										.bargaining
+											span.bargaining__data Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b>
+											.bargaining__row
+												span.bargaining__caption Цена реализации
+												span.bargaining__price 1 189 331,14 ₽
+										.bargaining
+											span.bargaining__data Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b>
+											.bargaining__row
+												span.bargaining__caption Цена реализации
+												span.bargaining__price 1 189 331,14 ₽
+										.bargaining
+											span.bargaining__data Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b>
+											.bargaining__row
+												span.bargaining__caption Цена реализации
+												span.bargaining__price 1 189 331,14 ₽
+										.bargaining
+											span.bargaining__data Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b>
+											.bargaining__row
+												span.bargaining__caption Цена реализации
+												span.bargaining__price 1 189 331,14 ₽								
+
+
+							a.link-back(href="#")
+								.link-back__arrow
+									svg
+										use(xlink:href="img/sprite.svg#arrow")
+								span назад к списку
+
+			section.down-sect.gray
+				.container
+					.down-sect__grid
+						.down-sect__wrap
+							.currency-rates
+								.currency-rates__left
+									h3.currency-rates__caption Курсы валют
+									span.currency-rates__subtitle Курс актуален на 11:50, 20.03.2020
+								.currency-rates__right
+									.currency-rates-table
+										//- .currency-rates-table__row-caption
+
+
+										.currency-rates-table__row
+											span.currency-rates-table__name USD
+											.currency-rates-table__wrap
+												span.currency-rates-table__caption Покупка
+												.currency-rates-table__val
+													span 74.90
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--down
+														use(xlink:href="img/sprite.svg#arrow-down")
+											.currency-rates-table__wrap
+												span.currency-rates-table__caption Продажа
+												.currency-rates-table__val
+													span 82.95
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--down
+														use(xlink:href="img/sprite.svg#arrow-down")
+										.currency-rates-table__row
+											span.currency-rates-table__name EUR
+											.currency-rates-table__wrap
+												.currency-rates-table__val
+													span 80.65
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--up
+														use(xlink:href="img/sprite.svg#arrow-down")
+											.currency-rates-table__wrap
+												.currency-rates-table__val
+													span 88.75
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--up
+														use(xlink:href="img/sprite.svg#arrow-down")
+
+						.down-sect__wrap
+							.contact-block
+								.contact-block__wrapper
+									h3.contact-block__title Контакты
+									.contact-block__wrap
+										a.contact-block__tel(href="tel:+78612596656") +7 (861) 259-66-56
+										button.btn-block.btn-block--three
+											span.btn-block__text заказать звонок
+										span.contact-block__caption Адрес центрального отделения
+										p.contact-block__text 350000, г. Краснодар, ул. Красная, 113
+
+
+		footer
+			include includes/footer.pug
+
+
+
+		include includes/script.pug
+		script(src="js/jquery.fancybox.min.js")
+		script(src="js/post-slider.js")

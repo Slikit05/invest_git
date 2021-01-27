@@ -1,0 +1,248 @@
+.page-footer {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), #F7F7F7;
+  padding: 74px 0 67px;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px;
+    padding-bottom: 40px;
+  }
+
+  &__down {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(62, 62, 62, 0.2);
+    padding-top: 26px;
+    align-items: center;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      margin-right: 16px;
+
+      &__img {
+        max-width: 173px;
+        max-height: 32px;
+      }
+    }
+  }
+
+  &__text {
+    a {
+      font-size: 14px;
+      line-height: 20px;
+      color: #8C1E1E;
+      padding-left: 24px;
+      margin-left: 24px;
+      position: relative;
+      transition: all 0.3s ease-in-out;
+      white-space: nowrap;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: calc(50% - 12px);
+        width: 1px;
+        height: 24px;
+        background-color: rgba($color: #3E3E3E, $alpha: 0.2);
+      }
+      &:hover {
+        color: #f03d40;
+      }
+      &:active {
+        color: #f03d40;
+      }
+      @media(max-width: 1200px) {
+        display: block;
+        margin-left: 0;
+        padding-left: 0;
+        margin-top: 10px;
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.footer-nav {
+  &__up {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+
+    &:hover {
+      svg {
+        stroke: #F03D40;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    color: #3E3E3E;
+    cursor: pointer;
+
+    br {
+      display: none;
+    }
+  }
+
+  svg {
+    width: 10px;
+    height: 10px;
+    fill: transparent;
+    stroke: #8C1E1E;
+    margin-left: 7px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  &__caption {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: #3E3E3E;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      color: #3E3E3E;
+    }
+
+    &:hover {
+      color: #3E3E3E;
+    }
+  }
+
+  &__bold {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: #3E3E3E;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: #F03D40;
+    }
+
+    &:focus {
+      color: #F03D40;
+    }
+  }
+}
+
+.footer-list {
+  &__item {
+    margin-bottom: 20px;
+    display: block;
+    line-height: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__sub-item {
+    margin-bottom: 20px;
+    display: block;
+    line-height: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 20px;
+    color: #7D7D7D;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: #F03D40;
+    }
+
+    &:focus {
+      color: #F03D40;
+    }
+  }
+
+  &__sub-link {
+    font-size: 14px;
+    line-height: 20px;
+    color: #7D7D7D;
+    position: relative;
+    margin-left: 15px;
+    padding-left: 17px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: #F03D40;
+    }
+
+    &:focus {
+      color: #F03D40;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 8px;
+      height: 2px;
+      background-color: #8C1E1E;
+    }
+  }
+}
+
+.created {
+  display: flex;
+
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #7D7D7D;
+    position: relative;
+    padding-right: 14px;
+    margin-right: 5px;
+    white-space: nowrap;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 8px;
+      width: 10px;
+      height: 2px;
+      background-color: #7D7D7D;
+    }
+  }
+
+  &__link {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+    color: #8C1E1E;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+
+    &:hover {
+      color: #F03D40;
+    }
+
+    &:focus {
+      color: #F03D40;
+    }
+  }
+}

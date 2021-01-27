@@ -1,0 +1,211 @@
+section.header-page
+	.container
+		.header-page__container
+			.header-page__up
+				.header-page__left
+					a.logo(href="#")
+						svg.logo__img
+							use(xlink:href="img/logo.svg#logo")
+					nav.header-page__nav
+						.header-page__field-select 
+							span Частным клиентам
+							svg
+								use(xlink:href="img/sprite.svg#arrow-down")
+						ul.header-page__list
+							li.header-page__item
+								a.header-page__link.header-page__link--active(href="#") Частным клиентам
+							li.header-page__item
+								a.header-page__link(href="#") Корпоративным клиентам
+							li.header-page__item
+								a.header-page__link(href="#") О банке
+
+				.header-page__right
+					a.link-map(href="#")
+						svg.link-map__icon
+							use(xlink:href="img/point.svg#point")
+						//- img.link-map__icon(src="img/point.svg")
+						span.link-map__text ОТДЕЛЕНИЯ И БАНКОМАТЫ
+					a.btn-block.btn-block--first(href="#")
+						span.btn-block__text Интернет-банк
+
+					.search-icon
+						svg
+							use(xlink:href="img/sprite.svg#search")
+
+					.search-line
+						form.search-line__form(action="")
+							label.search-line__wrap
+								svg
+									use(xlink:href="img/sprite.svg#search")
+								input.search-line__field(type="search" name="search-header" placeholder="Введите ключевую фразу")
+						.search-line__close
+
+					.burger
+						.burger__line
+						.burger__line
+						.burger__line
+
+			.header-page__down
+				nav.navigation
+					ul.navigation__list#navigationList
+						li.navigation__item
+							a.navigation__link.navigation__link--active(href="#") Акции
+						li.navigation__item
+							a.navigation__link(href="#") Кредитование
+						li.navigation__item
+							a.navigation__link(href="#") Вклады
+						li.navigation__item.navigation__item--dropdown
+							a.navigation__link(href="#") Пластиковые карты
+							ul.navigation-dropdown
+								li.navigation-dropdown__item
+									a.navigation-dropdown__link.navigation-dropdown__link--active(href="#") Корпоративная карта
+								li.navigation-dropdown__item
+									a.navigation-dropdown__link(href="#") Эквайринг
+								li.navigation-dropdown__item
+									a.navigation-dropdown__link(href="#") Зарплатные проекты
+						li.navigation__item
+							a.navigation__link(href="#") Коммунальные и другие платежи
+						li.navigation__item
+							a.navigation__link(href="#") Продажа монет и драгметаллов
+						li.navigation__item
+							a.navigation__link(href="#") Аренда индивидуальных ячеек
+						li.navigation__item
+							a.navigation__link(href="#") Аренда индивидуальных ячеек
+						li.navigation__item
+							a.navigation__link(href="#") Аренда индивидуальных ячеек
+						li.navigation__item
+							a.navigation__link(href="#") Аренда индивидуальных ячеек
+						li.navigation__item.navigation__item--more
+							.navigation__more
+								a.navigation__link.navigation__link(href="#") ЕЩЕ
+								svg
+									use(xlink:href="img/sprite.svg#arrow-down")
+							ul.navigation-dropdown
+								li.navigation-dropdown__item
+									a.navigation-dropdown__link(href="#") Переводы денежных средств
+								li.navigation-dropdown__item
+									a.navigation-dropdown__link(href="#") Тарифы
+								li.navigation-dropdown__item
+									a.navigation-dropdown__link(href="#") Дистанционное банковское обслуживание
+								li.navigation-dropdown__item
+									a.navigation-dropdown__link(href="#") Критерии отнесения клиентов к категории клиента-иностранного налогоплательщика
+								li.navigation-dropdown__item
+									a.navigation-dropdown__link(href="#") Сбор данных для ЕБС
+								li.navigation__item.navigation__item--dropdown
+									.navigation__item-wrap-flex
+										a.navigation__link(href="#") Пластиковые карты
+										svg
+											use(xlink:href="img/sprite.svg#arrow-down")
+									.navigation-dropdown-two
+										ul.footer-list
+											li.footer-list__sub-item
+												a.footer-list__sub-link(href="#") Корпоративная карта
+											li.footer-list__sub-item
+												a.footer-list__sub-link(href="#") Эквайринг
+											li.footer-list__sub-item
+												a.footer-list__sub-link(href="#") Зарплатные проекты
+
+				.search-icon
+					svg
+						use(xlink:href="img/sprite.svg#search")
+
+				.search-line
+					form.search-line__form(action="")
+						label.search-line__wrap
+							svg
+								use(xlink:href="img/sprite.svg#search")
+							input.search-line__field(type="search" name="search-header" placeholder="Введите ключевую фразу")
+					.search-line__close
+
+	section.mobile-menu
+		.mobile-menu__feedback
+			a.link-map(href="#")
+				svg.link-map__icon
+					use(xlink:href="img/point.svg#point")
+				span.link-map__text ОТДЕЛЕНИЯ И БАНКОМАТЫ
+			a.btn-block.btn-block--first(href="#")
+				span.btn-block__text Интернет-банк
+		.mobile-menu__up
+			a.mobile-menu__link(href="#") Частным<br> клиентам
+			a.mobile-menu__link.mobile-menu__link--active(href="#") Корпоративным<br> клиентам
+			a.mobile-menu__link(href="#") О банке
+		nav.nav-mobile
+			ul.nav-mobile__list
+				li.nav-mobile__item
+					a.nav-mobile__row(href="#")
+						span.nav-mobile__link Акции
+						svg
+							use(xlink:href="img/sprite.svg#arrow-down")
+
+				li.nav-mobile__item
+					a.nav-mobile__row.nav-mobile__row--active(href="#")
+						span.nav-mobile__link Кредитование
+						svg
+							use(xlink:href="img/sprite.svg#arrow-down")
+
+				li.nav-mobile__item
+					a.nav-mobile__row(href="#")
+						span.nav-mobile__link Депозиты
+						svg
+							use(xlink:href="img/sprite.svg#arrow-down")
+
+				li.nav-mobile__item
+					a.nav-mobile__row(href="#")
+						span.nav-mobile__link Пластиковые карты
+						svg
+							use(xlink:href="img/sprite.svg#arrow-down")
+					.nav-mobile-drop
+						ul.nav-mobile-drop__list
+							li.nav-mobile-drop__item
+								a.nav-mobile-drop__link.nav-mobile-drop__link--active(href='#') Корпоративная карта
+							li.nav-mobile-drop__item
+								a.nav-mobile-drop__link(href='#') Эквайринг
+							li.nav-mobile-drop__item
+								a.nav-mobile-drop__link(href='#') Зарплатные проекты
+
+				li.nav-mobile__item
+					a.nav-mobile__row(href="#")
+						span.nav-mobile__link Операции в иностранной валюте
+						svg
+							use(xlink:href="img/sprite.svg#arrow-down")
+
+				li.nav-mobile__item
+					a.nav-mobile__row(href="#")
+						span.nav-mobile__link Расчетно-кассовое обслуживание
+						svg
+							use(xlink:href="img/sprite.svg#arrow-down")
+
+				li.nav-mobile__item
+					a.nav-mobile__row(href="#")
+						span.nav-mobile__link Тарифы
+						svg
+							use(xlink:href="img/sprite.svg#arrow-down")
+
+				li.nav-mobile__item
+					a.nav-mobile__row(href="#")
+						span.nav-mobile__link Дистанционное банковское обслуживание
+						svg
+							use(xlink:href="img/sprite.svg#arrow-down")
+
+				li.nav-mobile__item
+					a.nav-mobile__row(href="#")
+						span.nav-mobile__link Дистанционное банковское обслуживание
+						svg
+							use(xlink:href="img/sprite.svg#arrow-down")
+
+				li.nav-mobile__item
+					a.nav-mobile__row(href="#")
+						span.nav-mobile__link Дистанционное банковское обслуживание
+						svg
+							use(xlink:href="img/sprite.svg#arrow-down")
+
+				li.nav-mobile__item
+					a.nav-mobile__row(href="#")
+						span.nav-mobile__link Дистанционное банковское обслуживание
+						svg
+							use(xlink:href="img/sprite.svg#arrow-down")
+
+a.link-up(href="#")
+	svg
+		use(xlink:href="img/arrows-two.svg#arrow-up")
+						

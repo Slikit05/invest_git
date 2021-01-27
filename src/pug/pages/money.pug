@@ -1,0 +1,177 @@
+doctype html
+html(lang="ru-Ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title ИнвестБанк
+
+		include includes/link.pug
+
+	body
+		header
+			include includes/header.pug
+
+		main
+			section.bread-crumbs.gray
+				.container
+					ul.bread-crumbs__list
+						li.bread-crumbs__item
+							a.bread-crumbs__link(href="#") Главная
+						li.bread-crumbs__item
+							a.bread-crumbs__link(href="#") Частным клиентам
+						li.bread-crumbs__item
+							span.bread-crumbs__link Продажа монет и драгметаллов
+
+			section.calculator-sect.calculator-sect--inner-offset-one.gray
+				.container
+					.row-title
+						h2.title Продажа монет&nbsp;&nbsp;<span class="title__line">&#8212;</span>
+					.calculator-sect-flex.calculator-sect-flex--change-two
+						.calculator-sect-flex__wrap-lg
+							.calculator-range.calculator-range--auto-width
+								span.calculator-range__name Стоимость, ₽
+								.calculator-range__range
+									.calculator-range__wrap-field
+										span.calculator-range__placeholder 2 400
+										input.calculator-range__field.calculator-range__field--white#price-start(type="text" name="price")
+									.calculator-range__wrap-field
+										span.calculator-range__placeholder 121 000
+										input.calculator-range__field.calculator-range__field--white#price-final(type="text" name="price")
+								.calculator-range__line#price-rahge
+								.calculator-range__row
+									span.calculator-range__before 2 400 ₽
+									span.calculator-range__after 121 000 ₽
+
+						.calculator-sect-flex__wrap
+							.select-field
+								.select-field__up
+									span.select-field__name Вес, г
+								.select-field__wrap
+									select.select-field__select(name="my_select")
+										option(value="Потребительский") 15,5
+										option(value="Потребительский") 16,5
+										option(value="Потребительский") 17,5
+										option(value="Потребительский") 18,5
+
+						.calculator-sect-flex__wrap-sm
+							.tabs
+								label.tabs__wrap
+									input(type="radio" name="money" checked)
+									.tabs__item Золото
+								label.tabs__wrap
+									input(type="radio" name="money")
+									.tabs__item Серебро
+
+			section.best-offers.best-offers--offset-bottom.best-offers--no-offset.gray-platform-up
+				.container
+					.best-offers__wrapper
+						.post-grid
+							include includes/post-link-two.pug							
+							+postBlockTwo('img/money1.jpg', 'img/money1.webp', 'Название монеты', '200 dollars, качество Proof', '12 000  ₽')
+							+postBlockTwo('img/money2.jpg', 'img/money2.webp', 'Название монеты', '3 рубля, качество Proof', '2 400  ₽')
+							+postBlockTwo('img/money3.jpg', 'img/money3.webp', 'Название монеты', '1 000 рублей, качество Proof', '24 000  ₽')
+
+							+postBlockTwo('img/money3.jpg', 'img/money3.webp', 'Название монеты', '1 000 рублей, качество Proof', '24 000  ₽')
+							+postBlockTwo('img/money1.jpg', 'img/money1.webp', 'Название монеты', '200 dollars, качество Proof', '12 000  ₽')
+							+postBlockTwo('img/money2.jpg', 'img/money2.webp', 'Название монеты', '3 рубля, качество Proof', '2 400  ₽')
+
+							+postBlockTwo('img/money2.jpg', 'img/money2.webp', 'Название монеты', '3 рубля, качество Proof', '2 400  ₽')
+							+postBlockTwo('img/money3.jpg', 'img/money3.webp', 'Название монеты', '1 000 рублей, качество Proof', '24 000  ₽')
+
+			section.sect-reclama
+				.sect-reclama__wrapper
+					.sect-reclama__block.sect-reclama__block--change
+						.sect-reclama__bg(style="background-color: #CBD5DE;")
+						.sect-reclama__wrap-hidden
+							.sect-reclama__wrap-img
+								picture
+									source(srcset="img/reclama6.webp" type="image/webp")
+									source(srcset="img/reclama6.png" type="image/png")
+									img.sect-reclama__img(src="img/reclama6.png")
+						.sect-reclama__wrap-text
+							h3.sect-reclama__title.sect-reclama__title--white +7 (861) 253-65-20
+							p.sect-reclama__text Подразделение банка по работе с драгоценными металлами
+							button.btn-block.btn-block--two
+								span.btn-block__text заказать звонок
+
+					.sect-reclama__block.sect-reclama__block--change
+						.sect-reclama__bg(style="background-color: #EDD4BE;")
+						.sect-reclama__wrap-hidden
+							.sect-reclama__wrap-img.sect-reclama__wrap-img--offset
+								picture
+									source(srcset="img/reclama2.webp" type="image/webp")
+									source(srcset="img/reclama2.png" type="image/png")
+									img.sect-reclama__img(src="img/reclama2.png")
+						.sect-reclama__wrap-text
+							h3.sect-reclama__title.sect-reclama__title--white Продажа драгоценных металлов
+							p.sect-reclama__text Cлитки из золота 5, 10, 20 и 1000 граммов
+							button.btn-block.btn-block--two
+								span.btn-block__text подробнее
+
+			section.center-wrapper
+				.container
+					.area-text-page
+						h3 Продажа монет из драгоценных металлов
+						p ОАО «ЮГ-Инвестбанк» предлагает физическим и юридическим лицам широкий выбор памятных монет из драгоценных металлов: золота (900,999 пробы) и серебра (900,925 пробы).
+						p Монета – это не просто продукт, она символизирует значимость и ценность денег в жизни людей. Памятные монеты являются отличным подарком, в котором сочетаются тематика, искусство и качество. Каждая монета имеет не только хороший дизайн, но и весьма необычна. В ней показаны классические ценности в нашей национальной интерпретации. В монете главное – искусство, качество и тема. Тема памятных монет отражает культуру страны.
+						p Приобретение памятных монет – это прекрасная возможность сделать ценный и оригинальный подарок деловым партнерам, друзьям и близким, к новому году, дню рождения, знаменательным датам, а также создать семейные ценности, передающиеся из поколения к поколению. Памятная монета является не только отличным подарком, но и выгодной инвестицией средств. Благодаря содержащимся в ней ценным металлам памятная монета имеет и реальную стоимость. Памятные монеты, выпущенные малым тиражом, пользуются большим спросом у коллекционеров.
+
+			section.down-sect.gray
+				.container
+					.down-sect__grid
+						.down-sect__wrap
+							.currency-rates
+								.currency-rates__left
+									h3.currency-rates__caption Курсы валют
+									span.currency-rates__subtitle Курс актуален на 11:50, 20.03.2020
+								.currency-rates__right
+									.currency-rates-table
+										//- .currency-rates-table__row-caption
+
+
+										.currency-rates-table__row
+											span.currency-rates-table__name USD
+											.currency-rates-table__wrap
+												span.currency-rates-table__caption Покупка
+												.currency-rates-table__val
+													span 74.90
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--down
+														use(xlink:href="img/sprite.svg#arrow-down")
+											.currency-rates-table__wrap
+												span.currency-rates-table__caption Продажа
+												.currency-rates-table__val
+													span 82.95
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--down
+														use(xlink:href="img/sprite.svg#arrow-down")
+										.currency-rates-table__row
+											span.currency-rates-table__name EUR
+											.currency-rates-table__wrap
+												.currency-rates-table__val
+													span 80.65
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--up
+														use(xlink:href="img/sprite.svg#arrow-down")
+											.currency-rates-table__wrap
+												.currency-rates-table__val
+													span 88.75
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--up
+														use(xlink:href="img/sprite.svg#arrow-down")
+
+						.down-sect__wrap
+							.contact-block
+								.contact-block__wrapper
+									h3.contact-block__title Контакты
+									.contact-block__wrap
+										a.contact-block__tel(href="tel:+78612596656") +7 (861) 259-66-56
+										button.btn-block.btn-block--three
+											span.btn-block__text заказать звонок
+										span.contact-block__caption Адрес центрального отделения
+										p.contact-block__text 350000, г. Краснодар, ул. Красная, 113
+
+
+		footer
+			include includes/footer.pug
+
+
+
+
+		include includes/script.pug

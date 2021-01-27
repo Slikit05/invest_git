@@ -1,0 +1,161 @@
+doctype html
+html(lang="ru-Ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title ИнвестБанк
+
+		include includes/link.pug
+
+	body
+		header
+			include includes/header.pug
+
+		main
+			section.bread-crumbs
+				.container
+					ul.bread-crumbs__list
+						li.bread-crumbs__item
+							a.bread-crumbs__link(href="#") Главная
+						li.bread-crumbs__item
+							a.bread-crumbs__link(href="#") О банке
+						li.bread-crumbs__item
+							span.bread-crumbs__link Новости
+
+			section.news-list
+				.container
+					.row-title
+						h2.title Новости&nbsp;&nbsp;<span class="title__line">&#8212;</span>
+					.news-list__wrapper
+						a.post-news.post-news--change.post-news--page-news(href="#")
+							.post-news__left
+								span.post-news__number 30
+								span.post-news__month декабря
+							.post-news__right
+								h3.post-news__title График расчетно-кассового обслуживания на празники
+								p.post-news__text Прием безналичных переводов к исполнению (в т.ч. по системе дистанционного обслуживания ОАО «Клиент-Банк») 31.12.2019г. будет производиться до 14 часов 30 минут. В период с 01.01.2020г. по 08.01.2020г. безналичные расчеты осуществляться не будут.
+
+						a.post-news.post-news--change.post-news--page-news(href="#")
+							.post-news__left
+								span.post-news__number 30
+								span.post-news__month декабря
+							.post-news__right
+								h3.post-news__title Юг-Инвестбанк продлевает обслуживание карт с истекшим сроком действия
+								p.post-news__text Для поддержки розничных клиентов в период повышенной эпидемиологической угрозы банк продлевает до 30 июня 2020 года обслуживание карт, срок действия которых истек в марте или истекает в апреле и мае этого года.
+
+						a.post-news.post-news--change.post-news--page-news(href="#")
+							.post-news__left
+								span.post-news__number 30
+								span.post-news__month декабря
+							.post-news__right
+								h3.post-news__title График расчетно-кассового обслуживания на празники
+								p.post-news__text Прием безналичных переводов к исполнению (в т.ч. по системе дистанционного обслуживания ОАО «Клиент-Банк») 31.12.2019г. будет производиться до 14 часов 30 минут. В период с 01.01.2020г. по 08.01.2020г. безналичные расчеты осуществляться не будут.
+
+						a.post-news.post-news--change.post-news--page-news(href="#")
+							.post-news__left
+								span.post-news__number 30
+								span.post-news__month декабря
+							.post-news__right
+								h3.post-news__title Юг-Инвестбанк продлевает обслуживание карт с истекшим сроком действия
+								p.post-news__text Для поддержки розничных клиентов в период повышенной эпидемиологической угрозы банк продлевает до 30 июня 2020 года обслуживание карт, срок действия которых истек в марте или истекает в апреле и мае этого года.
+
+						a.post-news.post-news--change.post-news--page-news(href="#")
+							.post-news__left
+								span.post-news__number 30
+								span.post-news__month декабря
+							.post-news__right
+								h3.post-news__title График расчетно-кассового обслуживания на празники
+								p.post-news__text Прием безналичных переводов к исполнению (в т.ч. по системе дистанционного обслуживания ОАО «Клиент-Банк») 31.12.2019г. будет производиться до 14 часов 30 минут. В период с 01.01.2020г. по 08.01.2020г. безналичные расчеты осуществляться не будут.
+
+			section.pagination
+				.container
+					.pagination__wrapper
+						a.pagination__arrow.pagination__arrow--prev(href="#")
+							.pagination__wrap
+								.pagination__wrap-svg
+									svg
+										use(xlink:href="img/sprite.svg#arrow")
+							span назад
+
+						ul.pagination__list
+							li.pagination__item
+								a.pagination__link.pagination__link--active(href="#") 1
+							li.pagination__item
+								a.pagination__link(href="#") 2
+							li.pagination__item
+								a.pagination__link(href="#") 3
+							li.pagination__item
+								a.pagination__link(href="#") 4
+							li.pagination__item
+								a.pagination__link(href="#") 5
+							li.pagination__item
+								a.pagination__link(href="#") ...
+							li.pagination__item
+								a.pagination__link(href="#") 12
+
+						a.pagination__arrow.pagination__arrow--next(href="#")
+							span вперед
+							.pagination__wrap
+								.pagination__wrap-svg
+									svg
+										use(xlink:href="img/sprite.svg#arrow")
+
+			section.down-sect.gray
+				.container
+					.down-sect__grid
+						.down-sect__wrap
+							.currency-rates
+								.currency-rates__left
+									h3.currency-rates__caption Курсы валют
+									span.currency-rates__subtitle Курс актуален на 11:50, 20.03.2020
+								.currency-rates__right
+									.currency-rates-table
+										//- .currency-rates-table__row-caption
+
+
+										.currency-rates-table__row
+											span.currency-rates-table__name USD
+											.currency-rates-table__wrap
+												span.currency-rates-table__caption Покупка
+												.currency-rates-table__val
+													span 74.90
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--down
+														use(xlink:href="img/sprite.svg#arrow-down")
+											.currency-rates-table__wrap
+												span.currency-rates-table__caption Продажа
+												.currency-rates-table__val
+													span 82.95
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--down
+														use(xlink:href="img/sprite.svg#arrow-down")
+										.currency-rates-table__row
+											span.currency-rates-table__name EUR
+											.currency-rates-table__wrap
+												.currency-rates-table__val
+													span 80.65
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--up
+														use(xlink:href="img/sprite.svg#arrow-down")
+											.currency-rates-table__wrap
+												.currency-rates-table__val
+													span 88.75
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--up
+														use(xlink:href="img/sprite.svg#arrow-down")
+
+						.down-sect__wrap
+							.contact-block
+								.contact-block__wrapper
+									h3.contact-block__title Контакты
+									.contact-block__wrap
+										a.contact-block__tel(href="tel:+78612596656") +7 (861) 259-66-56
+										button.btn-block.btn-block--three
+											span.btn-block__text заказать звонок
+										span.contact-block__caption Адрес центрального отделения
+										p.contact-block__text 350000, г. Краснодар, ул. Красная, 113
+
+
+		footer
+			include includes/footer.pug
+
+
+
+
+		include includes/script.pug

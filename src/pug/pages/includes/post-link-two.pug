@@ -1,0 +1,33 @@
+mixin postBlockTwo(srcpic, srcpic2, title, text, price)
+	a.post-block(href="#")
+		.post-block__up-wrap
+			.post-block__wrap-img
+				picture
+					source(srcset=srcpic2 type="image/webp")
+					source(srcset=srcpic type="image/jpeg")
+					img.post-block__img(src=srcpic)
+		.post-block__wrap-text.post-block__wrap-text--border
+			.post-block__up-row
+				h4.post-block__title= title
+				.post-block__flex
+					.value-credit
+						.value-credit__block
+							span.value-credit__name Ставка от
+							span.value-credit__value.value-credit__value--md 12,9%
+					.value-credit
+						.value-credit__block
+							span.value-credit__name Сумма до
+							span.value-credit__value.value-credit__value--md 2 000 000 ₽
+					.value-credit
+						.value-credit__block
+							span.value-credit__name Срок до
+							span.value-credit__value.value-credit__value--md 5 лет
+				.post-block__area
+					p= text
+			.post-block__down-row
+				.link-more.link-more--black
+					span подробнее
+					.link-more__wrap-svg
+						svg
+							use(xlink:href="img/sprite.svg#arrow")
+				span.post-block__price=price

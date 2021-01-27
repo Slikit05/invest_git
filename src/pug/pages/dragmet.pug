@@ -1,0 +1,311 @@
+doctype html
+html(lang="ru-Ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title ИнвестБанк
+
+		include includes/link.pug
+
+	body
+		header
+			include includes/header.pug
+			section.first-screen.first-screen--change-margin
+				.first-screen-content
+					
+					.bg-image
+						picture
+							source(srcset="img/first-screen-content-bg3.webp" type="image/webp")
+							source(srcset="img/first-screen-content-bg3.jpg" type="image/jpeg")
+							img.bg-image__img(src="img/first-screen-content-bg3.jpg")
+					.wrapper-first-screen
+						.bread-crumbs
+							.container
+								ul.bread-crumbs__list
+									li.bread-crumbs__item
+										a.bread-crumbs__link(href="#") Главная
+									li.bread-crumbs__item
+										a.bread-crumbs__link(href="#") Частным клиентам
+									li.bread-crumbs__item
+										a.bread-crumbs__link(href="#") Продажа монет и драгметаллов
+									li.bread-crumbs__item
+										span.bread-crumbs__link Драгоценные металлы
+						.container
+							.first-screen-content__wrap.first-screen-content__wrap--inner
+								.first-screen-content__row-title
+									h2.first-screen-content__title Драгоценные<br> металлы
+								.border-top.offset-down-md
+									.flex-wrap.margin-down
+										.value-credit
+											.value-credit__block
+												span.value-credit__name.value-credit__name--white Металл
+												span.value-credit__value.value-credit__value--white Золото
+										.value-credit
+											.value-credit__block
+												span.value-credit__name.value-credit__name--white Покупка
+												span.value-credit__value.value-credit__value--white 3 800 ₽/г.
+										.value-credit
+											.value-credit__block
+												span.value-credit__name.value-credit__name--white Продажа 
+												span.value-credit__value.value-credit__value--white 3 900 ₽/г.
+										.value-credit
+											.value-credit__block
+												span.value-credit__name.value-credit__name--white Котировка 
+												span.value-credit__value.value-credit__value--white 4 100		
+									ul.row-info-check
+										li.row-info-check__item
+											svg
+												use(xlink:href="img/check.svg#check")
+											span.row-info-check__text Цены продажи обезличенных драгоценных металлов, действующие с 25.03.2020
+
+		main
+
+			section.accordion-wrapper.accordion-wrapper--change-margin
+				.container
+					.accordion
+						.accordion__up
+							h3.accordion__title Мерный слиток, Золото (999.9), 10 грамм
+							.accordion__arrow
+								svg
+									use(xlink:href="img/sprite.svg#arrow")
+						.accordion__content
+							.accordion__flex
+								.accordion__wrap-flex
+									.value-credit
+										.value-credit__block
+											span.value-credit__name Цена продажи за грамм (в т.ч. НДС) 
+											span.value-credit__value 4 500 ₽
+								.accordion__wrap-flex
+									.value-credit
+										.value-credit__block
+											span.value-credit__name Цена продажи за слиток (в т.ч. НДС)
+											span.value-credit__value 45 000 ₽
+								.accordion__wrap-flex
+									.value-credit
+										.value-credit__block
+											span.value-credit__name НДС
+											span.value-credit__value 9 000 ₽
+								.accordion__wrap-flex
+									.value-credit
+										.value-credit__block
+											span.value-credit__name Цена покупки
+											span.value-credit__value 500 ₽/г.
+
+
+					.accordion
+						.accordion__up
+							h3.accordion__title Мерный слиток, Золото (999.9), 20 грамм
+							.accordion__arrow
+								svg
+									use(xlink:href="img/sprite.svg#arrow")
+						.accordion__content
+							.accordion__flex
+								.accordion__wrap-flex
+									.value-credit
+										.value-credit__block
+											span.value-credit__name Цена продажи за грамм (в т.ч. НДС) 
+											span.value-credit__value 4 500 ₽
+								.accordion__wrap-flex
+									.value-credit
+										.value-credit__block
+											span.value-credit__name Цена продажи за слиток (в т.ч. НДС)
+											span.value-credit__value 45 000 ₽
+								.accordion__wrap-flex
+									.value-credit
+										.value-credit__block
+											span.value-credit__name НДС
+											span.value-credit__value 9 000 ₽
+								.accordion__wrap-flex
+									.value-credit
+										.value-credit__block
+											span.value-credit__name Цена покупки
+											span.value-credit__value 500 ₽/г.
+
+
+					.accordion
+						.accordion__up
+							h3.accordion__title Мерный слиток, Золото (999.9), 50 грамм
+							.accordion__arrow
+								svg
+									use(xlink:href="img/sprite.svg#arrow")
+						.accordion__content
+							.accordion__flex
+								.accordion__wrap-flex
+									.value-credit
+										.value-credit__block
+											span.value-credit__name Цена продажи за грамм (в т.ч. НДС) 
+											span.value-credit__value 4 500 ₽
+								.accordion__wrap-flex
+									.value-credit
+										.value-credit__block
+											span.value-credit__name Цена продажи за слиток (в т.ч. НДС)
+											span.value-credit__value 45 000 ₽
+								.accordion__wrap-flex
+									.value-credit
+										.value-credit__block
+											span.value-credit__name НДС
+											span.value-credit__value 9 000 ₽
+								.accordion__wrap-flex
+									.value-credit
+										.value-credit__block
+											span.value-credit__name Цена покупки
+											span.value-credit__value 500 ₽/г.
+
+					.accordion
+						.accordion__up
+							h3.accordion__title Мерный слиток, Золото (999.9), 50 грамм
+							.accordion__arrow
+								svg
+									use(xlink:href="img/sprite.svg#arrow")
+						.accordion__content
+							.accordion__flex
+								.accordion__wrap-flex
+									.value-credit
+										.value-credit__block
+											span.value-credit__name Цена продажи за грамм (в т.ч. НДС) 
+											span.value-credit__value 4 500 ₽
+								.accordion__wrap-flex
+									.value-credit
+										.value-credit__block
+											span.value-credit__name Цена продажи за слиток (в т.ч. НДС)
+											span.value-credit__value 45 000 ₽
+								.accordion__wrap-flex
+									.value-credit
+										.value-credit__block
+											span.value-credit__name НДС
+											span.value-credit__value 9 000 ₽
+								.accordion__wrap-flex
+									.value-credit
+										.value-credit__block
+											span.value-credit__name Цена покупки
+											span.value-credit__value 500 ₽/г.
+
+					.accordion
+						.accordion__up
+							h3.accordion__title Мерный слиток, Золото (999.9), 50 грамм
+							.accordion__arrow
+								svg
+									use(xlink:href="img/sprite.svg#arrow")
+						.accordion__content
+							.accordion__flex
+								.accordion__wrap-flex
+									.value-credit
+										.value-credit__block
+											span.value-credit__name Цена продажи за грамм (в т.ч. НДС) 
+											span.value-credit__value 4 500 ₽
+								.accordion__wrap-flex
+									.value-credit
+										.value-credit__block
+											span.value-credit__name Цена продажи за слиток (в т.ч. НДС)
+											span.value-credit__value 45 000 ₽
+								.accordion__wrap-flex
+									.value-credit
+										.value-credit__block
+											span.value-credit__name НДС
+											span.value-credit__value 9 000 ₽
+								.accordion__wrap-flex
+									.value-credit
+										.value-credit__block
+											span.value-credit__name Цена покупки
+											span.value-credit__value 500 ₽/г.
+
+					.accordion
+						.accordion__up
+							h3.accordion__title Мерный слиток, Золото (999.9), 50 грамм
+							.accordion__arrow
+								svg
+									use(xlink:href="img/sprite.svg#arrow")
+						.accordion__content
+							.accordion__flex
+								.accordion__wrap-flex
+									.value-credit
+										.value-credit__block
+											span.value-credit__name Цена продажи за грамм (в т.ч. НДС) 
+											span.value-credit__value 4 500 ₽
+								.accordion__wrap-flex
+									.value-credit
+										.value-credit__block
+											span.value-credit__name Цена продажи за слиток (в т.ч. НДС)
+											span.value-credit__value 45 000 ₽
+								.accordion__wrap-flex
+									.value-credit
+										.value-credit__block
+											span.value-credit__name НДС
+											span.value-credit__value 9 000 ₽
+								.accordion__wrap-flex
+									.value-credit
+										.value-credit__block
+											span.value-credit__name Цена покупки
+											span.value-credit__value 500 ₽/г.
+
+					span.md-text Цены продажи слитков из драгоценных металлов, действующие <b>с 20.03.2020 г. с 09-00 часов.</b>
+
+			section.center-wrapper
+				.container
+					.area-text-page
+						h3 Продажа драгоценных металлов
+						p ЮГ-Инвестбанк (ПАО) предлагает широкую номенклатуру мерных слитков из золота 5, 10, 20 и 1000 граммов. Мерные слитки — слитки драгоценных металлов массой от 1 грамма до 1000 граммов чистотой не ниже 999,9 долей химически чистого металла на 1000 долей лигатурной массы. Слитки большей массы называются стандартными.
+						p Все предлагаемые слитки изготовлены и маркированы в соответствии с отраслевыми стандартами российскими аффинажными предприятиями и содержат химически чистого основного металла не менее 99,99% лигатурной массы слитка. Вместе со слитком покупателю передается сертификат завода-изготовителя с указанием пробы, номера и массы мерного слитка.
+						p Слитки драгоценных металлов являются одним из инструментов инвестирования средств, способом накопления ценностей, материалом для изготовления ювелирных изделий. Слитки можно дарить, вкладывать на специальные счета в банк, покупать и продавать, использовать в качестве залогового имущества, передавать по наследству.
+						p Чтобы приобрести слиток физическому лицу достаточно иметь с собой документ, удостоверяющий личность и необходимую сумму рублей.
+
+
+			section.down-sect.gray
+				.container
+					.down-sect__grid
+						.down-sect__wrap
+							.currency-rates
+								.currency-rates__left
+									h3.currency-rates__caption Курсы валют
+									span.currency-rates__subtitle Курс актуален на 11:50, 20.03.2020
+								.currency-rates__right
+									.currency-rates-table
+										//- .currency-rates-table__row-caption
+
+
+										.currency-rates-table__row
+											span.currency-rates-table__name USD
+											.currency-rates-table__wrap
+												span.currency-rates-table__caption Покупка
+												.currency-rates-table__val
+													span 74.90
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--down
+														use(xlink:href="img/sprite.svg#arrow-down")
+											.currency-rates-table__wrap
+												span.currency-rates-table__caption Продажа
+												.currency-rates-table__val
+													span 82.95
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--down
+														use(xlink:href="img/sprite.svg#arrow-down")
+										.currency-rates-table__row
+											span.currency-rates-table__name EUR
+											.currency-rates-table__wrap
+												.currency-rates-table__val
+													span 80.65
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--up
+														use(xlink:href="img/sprite.svg#arrow-down")
+											.currency-rates-table__wrap
+												.currency-rates-table__val
+													span 88.75
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--up
+														use(xlink:href="img/sprite.svg#arrow-down")
+
+						.down-sect__wrap
+							.contact-block
+								.contact-block__wrapper
+									h3.contact-block__title Контакты
+									.contact-block__wrap
+										a.contact-block__tel(href="tel:+78612596656") +7 (861) 259-66-56
+										button.btn-block.btn-block--three
+											span.btn-block__text заказать звонок
+										span.contact-block__caption Адрес центрального отделения
+										p.contact-block__text 350000, г. Краснодар, ул. Красная, 113
+
+
+		footer
+			include includes/footer.pug
+
+
+
+
+		include includes/script.pug

@@ -1,0 +1,348 @@
+doctype html
+html(lang="ru-Ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title ИнвестБанк
+
+		include includes/link.pug
+
+	body
+		header
+			include includes/header.pug
+			
+											
+		main
+			section.first-screen.first-screen--mob-offset
+				.first-screen__slider.swiper-container
+					.first-screen__wrapper.swiper-wrapper
+						.first-screen__slide.swiper-slide
+							.first-screen-content
+								.bg-first-ie(style="background-image: url(img/first-screen-content-bg.jpg)")
+								.bg-image
+									picture
+										source(srcset="img/first-screen-content-bg.webp" type="image/webp")
+										source(srcset="img/first-screen-content-bg.jpg" type="image/jpeg")
+										img.bg-image__img(src="img/first-screen-content-bg.jpg")
+								.container
+									.first-screen-content__wrap
+										a.category-link(href="#") 
+											span вклады
+										.first-screen-content__row-title
+											h2.first-screen-content__title Управляй 4,0%
+										.border-top.flex-wrap.offset-down
+											.value-credit
+												.value-credit__block
+													span.value-credit__name.value-credit__name--white Срок вклада
+													span.value-credit__value.value-credit__value--white 395 дней
+											.value-credit
+												.value-credit__block
+													span.value-credit__name.value-credit__name--white Ставка
+													span.value-credit__value.value-credit__value--white 4% годовых
+											.value-credit
+												.value-credit__block
+													span.value-credit__name.value-credit__name--white Мин. сумма
+													span.value-credit__value.value-credit__value--white 20 000 ₽
+										.first-screen-content__flex
+											button.btn-block.btn-block--two.show_popup(rel="modal3")
+												span.btn-block__text Оформить вклад
+											a.link-more(href="#")
+												span подробнее
+												.link-more__wrap-svg
+													svg
+														use(xlink:href="img/sprite.svg#arrow")
+
+						.first-screen__slide.swiper-slide
+							.first-screen-content
+								.bg-first-ie(style="background-image: url(img/first-screen-content-bg.jpg)")
+								.bg-image
+									picture
+										source(srcset="img/first-screen-content-bg.webp" type="image/webp")
+										source(srcset="img/first-screen-content-bg.jpg" type="image/jpeg")
+										img.bg-image__img(src="img/first-screen-content-bg.jpg")
+								.container
+									.first-screen-content__wrap
+										a.category-link(href="#") 
+											span вклады
+										.first-screen-content__row-title
+											h2.first-screen-content__title Управляй 4,0%
+										.border-top.flex-wrap.offset-down
+											.value-credit
+												.value-credit__block
+													span.value-credit__name.value-credit__name--white Срок вклада
+													span.value-credit__value.value-credit__value--white 395 дней
+											.value-credit
+												.value-credit__block
+													span.value-credit__name.value-credit__name--white Ставка
+													span.value-credit__value.value-credit__value--white 4% годовых
+											.value-credit
+												.value-credit__block
+													span.value-credit__name.value-credit__name--white Мин. сумма
+													span.value-credit__value.value-credit__value--white 20 000 ₽
+										.first-screen-content__flex
+											button.btn-block.btn-block--two.show_popup(rel="modal3")
+												span.btn-block__text Оформить вклад
+											a.link-more(href="#")
+												span подробнее
+												.link-more__wrap-svg
+													svg
+														use(xlink:href="img/sprite.svg#arrow")
+
+						.first-screen__slide.swiper-slide
+							.first-screen-content.first-screen-content--black
+								.bg-first-ie(style="background-image: url(img/first-screen-content-bg14.jpg)")
+								.bg-image
+									picture
+										source(srcset="img/first-screen-content-bg14.webp" type="image/webp")
+										source(srcset="img/first-screen-content-bg14.jpg" type="image/jpeg")
+										img.bg-image__img(src="img/first-screen-content-bg14.jpg")
+								.container
+									.first-screen-content__wrap
+										a.category-link(href="#") 
+											span вклады
+										.first-screen-content__row-title
+											h2.first-screen-content__title Управляй 4,0%
+										.border-top.flex-wrap.offset-down
+											.value-credit
+												.value-credit__block
+													span.value-credit__name.value-credit__name--white Срок вклада
+													span.value-credit__value.value-credit__value--white 395 дней
+											.value-credit
+												.value-credit__block
+													span.value-credit__name.value-credit__name--white Ставка
+													span.value-credit__value.value-credit__value--white 4% годовых
+											.value-credit
+												.value-credit__block
+													span.value-credit__name.value-credit__name--white Мин. сумма
+													span.value-credit__value.value-credit__value--white 20 000 ₽
+										.first-screen-content__flex
+											button.btn-block.btn-block--two.show_popup(rel="modal1")
+												span.btn-block__text Оформить вклад
+											a.link-more(href="#")
+												span подробнее
+												.link-more__wrap-svg
+													svg
+														use(xlink:href="img/sprite.svg#arrow")
+
+						.first-screen__slide.swiper-slide
+							.first-screen-content
+								.bg-first-ie(style="background-image: url(img/first-screen-content-bg.jpg)")
+								.bg-image
+									picture
+										source(srcset="img/first-screen-content-bg.webp" type="image/webp")
+										source(srcset="img/first-screen-content-bg.jpg" type="image/jpeg")
+										img.bg-image__img(src="img/first-screen-content-bg.jpg")
+								.container
+									.first-screen-content__wrap
+										a.category-link(href="#") 
+											span вклады
+										.first-screen-content__row-title
+											h2.first-screen-content__title Управляй 4,0%
+										.border-top.flex-wrap.offset-down
+											.value-credit
+												.value-credit__block
+													span.value-credit__name.value-credit__name--white Срок вклада
+													span.value-credit__value.value-credit__value--white 395 дней
+											.value-credit
+												.value-credit__block
+													span.value-credit__name.value-credit__name--white Ставка
+													span.value-credit__value.value-credit__value--white 4% годовых
+											.value-credit
+												.value-credit__block
+													span.value-credit__name.value-credit__name--white Мин. сумма
+													span.value-credit__value.value-credit__value--white 20 000 ₽
+										.first-screen-content__flex
+											button.btn-block.btn-block--two.show_popup(rel="modal1")
+												span.btn-block__text Оформить вклад
+											a.link-more(href="#")
+												span подробнее
+												.link-more__wrap-svg
+													svg
+														use(xlink:href="img/sprite.svg#arrow")
+
+					.first-screen__arrow.first-screen__arrow--prev
+						svg
+							use(xlink:href="img/sprite.svg#arrow")
+					.first-screen__arrow.first-screen__arrow--next
+						svg
+							use(xlink:href="img/sprite.svg#arrow")
+
+					.first-screen__navigation
+						.container
+							.first-screen__navigation-flex
+
+								.first-screen__pagination
+
+								.first-screen__friction
+									span.first-screen__current 1
+									span из
+									span.first-screen__total
+									
+			section.calculator-sect
+				.container
+					.row-title
+						a.category-link(href="#") 
+							span кредиты
+						h2.title Оформить кредит наличными&nbsp;&nbsp;<span class="title__line">&#8212;</span>
+					.calculator-sect__two-columns
+						.calculator-sect__left
+							.calculator-range
+								span.calculator-range__name Сумма кредита, ₽
+								.calculator-range__wrap-field.calculator-range__wrap-field--white
+									span.calculator-range__placeholder 90 000
+									input.calculator-range__field.calculator-range__field--white#amount(type="text" name="amount")
+								.calculator-range__line#loan-amount
+								.calculator-range__row
+									span.calculator-range__before 90 000 ₽
+									span.calculator-range__after 5 000 000 ₽
+
+							.calculator-range
+								span.calculator-range__name Срок кредита
+								.calculator-range__wrap-field.calculator-range__wrap-field--white
+									span.calculator-range__placeholder 1 год
+									input.calculator-range__field.calculator-range__field--white#age(type="text" disabled)
+								.calculator-range__line#age-slider
+								.calculator-range__row
+									span.calculator-range__before 1 год
+									span.calculator-range__after 5 лет
+
+							span.sm-text Расчет носит информационный характер и не является публичной офертой
+								
+						.calculator-sect__right
+							.calculator-sect__wrap
+								.calculator-sect__block
+									.value-credit
+										.value-credit__block
+											span.value-credit__name.value-credit__name--bold Ежемесячный платеж
+											span.value-credit__value 73 800 ₽
+									.value-credit
+										.value-credit__block
+											span.value-credit__name.value-credit__name--bold Ставка по кредиту
+											span.value-credit__value 8.99%
+								.calculator-sect__flex
+									button.btn-block.btn-block--two
+										span.btn-block__text Оформить вклад
+									a.link-more.link-more--black(href="#")
+										span подробнее
+										.link-more__wrap-svg
+											svg
+												use(xlink:href="img/sprite.svg#arrow")
+								span.sm-text Расчет носит информационный характер и не является публичной офертой
+
+			section.best-offers.gray-and-white
+				.container
+					.row-title
+						h2.title Лучшие предложения банка для частных лиц&nbsp;&nbsp;<span class="title__line">&#8212;</span>
+						.best-offers__navigation
+							.best-offers__arrow.best-offers__arrow--prev
+								svg
+									use(xlink:href="img/sprite.svg#arrow")
+							.best-offers__arrow.best-offers__arrow--next
+								svg
+									use(xlink:href="img/sprite.svg#arrow")
+					.best-offers__wrapper.best-offers__slider.swiper-container
+						.slider-grid.swiper-wrapper
+							include includes/post-link.pug
+							.best-offers__slide.swiper-slide
+								+postBlock('img/post1.jpg', 'img/post1.webp', 'Потребительский кредит', 'Без залога и поручителей', 'кредиты')
+							.best-offers__slide.swiper-slide
+								+postBlock('img/post2.jpg', 'img/post2.webp', 'Visa Gold дебетовая в долларах США', '', 'пластиковые карты')
+							.best-offers__slide.swiper-slide
+								+postBlock('img/post3.jpg', 'img/post3.webp', 'Вклад стандарт', 'Довложения не принимаются', 'вклады')
+
+			section.sect-reclama
+				.container
+					.sect-reclama__wrapper
+						.sect-reclama__block
+							.sect-reclama__bg(style="background-color: #DDCAC4")
+							.sect-reclama__wrap-img
+								picture
+									source(srcset="img/reclama1.webp" type="image/webp")
+									source(srcset="img/reclama1.png" type="image/png")
+									img.sect-reclama__img(src="img/reclama1.png")
+							.sect-reclama__wrap-text
+								h3.sect-reclama__title.sect-reclama__title--white Офисы и банкоматы
+								p.sect-reclama__text Более 50 отделений на территории ЮФО
+								button.btn-block.btn-block--two
+									span.btn-block__text смотреть все
+
+			section.sect-news
+				.container
+					.row-title
+						a.category-link(href="#") 
+							span новости
+						h2.title Что нового&nbsp;&nbsp;<span class="title__line">&#8212;</span>
+					.sect-news__grid
+						a.post-news(href="#")
+							.post-news__left
+								span.post-news__number 31
+								span.post-news__month декабря
+							.post-news__right
+								p.post-news__text Уважаемые клиенты, партнеры, коллеги! ОАО «ЮГ-Инвестбанк» поздравляет Вас с Новым 2020 годом и Рождеством Христовым! Желаем Вам крепкого здоровья, благополучия и стабильности!
+
+						a.post-news(href="#")
+							.post-news__left
+								span.post-news__number 28
+								span.post-news__month декабря
+							.post-news__right
+								p.post-news__text Дополнительный офис в г. Тихорецке совместно с ИФНС №1 по Краснодарскому краю провели презентацию Банковских продуктов для Индивидуальных предпринимателей и физических лиц.
+
+			section.down-sect.gray
+				.container
+					.down-sect__grid
+						.down-sect__wrap
+							.currency-rates
+								.currency-rates__left
+									h3.currency-rates__caption Курсы валют
+									span.currency-rates__subtitle Курс актуален на 11:50, 20.03.2020
+								.currency-rates__right
+									.currency-rates-table
+										//- .currency-rates-table__row-caption
+											
+											
+										.currency-rates-table__row
+											span.currency-rates-table__name USD
+											.currency-rates-table__wrap
+												span.currency-rates-table__caption Покупка
+												.currency-rates-table__val
+													span 74.90
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--down
+														use(xlink:href="img/sprite.svg#arrow-down")
+											.currency-rates-table__wrap
+												span.currency-rates-table__caption Продажа
+												.currency-rates-table__val
+													span 82.95
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--down
+														use(xlink:href="img/sprite.svg#arrow-down")
+										.currency-rates-table__row
+											span.currency-rates-table__name EUR
+											.currency-rates-table__wrap
+												.currency-rates-table__val
+													span 80.65
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--up
+														use(xlink:href="img/sprite.svg#arrow-down")
+											.currency-rates-table__wrap
+												.currency-rates-table__val
+													span 88.75
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--up
+														use(xlink:href="img/sprite.svg#arrow-down")
+
+						.down-sect__wrap
+							.contact-block
+								.contact-block__wrapper
+									h3.contact-block__title Контакты
+									.contact-block__wrap
+										a.contact-block__tel(href="tel:+78612596656") +7 (861) 259-66-56
+										button.btn-block.btn-block--three
+											span.btn-block__text заказать звонок
+										span.contact-block__caption Адрес центрального отделения
+										p.contact-block__text 350000, г. Краснодар, ул. Красная, 113
+
+
+		footer
+			include includes/footer.pug
+
+
+
+
+		include includes/script.pug

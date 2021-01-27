@@ -1,0 +1,274 @@
+.no-cssgrid {
+  .bg-first-ie {
+    display: block;
+
+  }
+
+  .inner-post__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .inner-post__wrap-img {
+    max-width: 67%;
+  }
+
+  .inner-post__wrap-info {
+    max-width: 33%;
+    padding-left: 32px;
+  }
+
+  .inner-post__wrap-text {
+    max-width: 67%;
+    padding-top: 15px;
+  }
+
+  .calculator-sect {
+    &__two-columns {
+      display: flex;
+    }
+
+    &__left {
+      width: 65%;
+    }
+
+    &__right {
+      width: 35%;
+    }
+  }
+
+  .post-grid {
+    display: flex;
+    margin: 0 -16px;
+
+    @media (max-width: 1200px) {
+      margin: 0;
+    }
+  }
+
+  .best-offers {
+    &__slide {
+      width: 33.33%;
+      height: auto;
+      padding: 0 16px;
+    }
+  }
+
+  .sect-news {
+    &__grid {
+      display: flex;
+      margin: 0 -15px;
+
+      .post-news {
+        padding: 0 15px;
+        width: 50%;
+      }
+    }
+  }
+
+  .down-sect {
+    &__grid {
+      display: flex;
+      margin: 0 -16px;
+    }
+
+    &__wrap {
+      padding: 0 16px;
+      width: 50%;
+    }
+  }
+
+  .first-screen__friction {
+    display: none;
+  }
+
+  .first-screen-content__wrap {
+    padding-top: 80px;
+  }
+
+  .first-screen__pagination {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      width: 8px;
+      height: 8px;
+      margin-bottom: 15px;
+      background-color: #fff;
+      opacity: 0.7;
+      transition: all 0.3s ease-in-out;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+    }
+  }
+
+  .page-footer {
+    &__grid {
+      display: flex;
+      margin: 0 -16px;
+    }
+
+    &__wrap {
+      padding: 0 16px;
+      width: 25%;
+    }
+  }
+
+  .best-offers {
+    margin-bottom: 15px;
+  }
+
+  .post-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+
+    .post-block {
+      width: 33.33%;
+      padding: 0 16px;
+      border: none;
+      background-color: transparent;
+      margin-bottom: 32px;
+
+      &::before {
+        left: 16px;
+        right: 16px;
+      }
+
+      &:hover {
+        &::before {
+          left: 0;
+          right: 0;
+        }
+      }
+
+      &__up-wrap,
+      &__wrap-text {
+        border: 1px solid #e2e2e2;
+        background-color: transparent;
+      }
+
+      &__up-wrap {
+        border-bottom: none;
+      }
+
+      &__wrap-text {
+        border-top: none;
+      }
+    }
+  }
+
+  .benefits {
+    margin-bottom: 38px;
+
+    &__wrapper {
+      display: flex;
+      margin: 0 -16px;
+      flex-wrap: wrap;
+    }
+
+    &__wrap {
+      width: 33.33%;
+      padding: 0 16px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .two-column-grid {
+    margin-bottom: 0;
+
+    &__wrapper {
+      display: flex;
+      margin: 0 -16px;
+      flex-wrap: wrap;
+    }
+
+    &__wrap {
+      width: 50%;
+      padding: 0 16px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .navigation-dropdown {
+    transform: none;
+    opacity: 1;
+    pointer-events: inherit;
+    display: none;
+  }
+
+  .navigation__item--dropdown:hover .navigation-dropdown,
+  .navigation__item--more:hover .navigation-dropdown {
+    display: block;
+  }
+
+  .benefits-wrapper {
+    display: flex;
+    margin: 0 -16px;
+    flex-wrap: wrap;
+
+    &__wrap {
+      width: 50%;
+      padding: 0 16px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .inner-post {
+    &__wrapper {
+      display: flex;
+      margin: 0 -16px;
+      flex-wrap: wrap;
+    }
+    &__wrap-slider,
+    &__wrap-info {
+      width: 50%;
+      padding: 0 16px;
+      margin-bottom: 32px;
+    }
+    &__wrap-content {
+      width: 100%;
+      padding: 0 16px;
+    }
+  }
+  .post-inner-slider__slide-lg {
+    overflow: hidden;
+  }
+  .not-found .btn-block {
+    display: block;
+    margin: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .no-cssgrid {
+    .inner-post__wrapper {
+      display: block;
+    }
+
+    .inner-post__wrap-img {
+      max-width: inherit;
+      margin-bottom: 30px;
+    }
+
+    .inner-post__wrap-info {
+      max-width: inherit;
+      padding-left: 0;
+    }
+
+    .inner-post__wrap-text {
+      max-width: inherit;
+      padding-top: 15px;
+    }
+
+    .post-grid .post-block {
+      width: 50%;
+    }
+  }
+}

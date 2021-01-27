@@ -1,0 +1,227 @@
+doctype html
+html(lang="ru-Ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title ИнвестБанк
+
+		include includes/link.pug
+
+	body
+		header
+			include includes/header.pug
+
+		main
+			section.bread-crumbs
+				.container
+					ul.bread-crumbs__list
+						li.bread-crumbs__item
+							a.bread-crumbs__link(href="#") Главная
+						li.bread-crumbs__item
+							a.bread-crumbs__link(href="#") О банке
+						li.bread-crumbs__item
+							span.bread-crumbs__link Текстовая страница
+
+			section.page-content
+				.container
+					.row-title
+						h2.title Текстовая страница&nbsp;&nbsp;<span class="title__line">&#8212;</span>
+
+				section.center-wrapper
+					.container
+						.area-text-page.border-bottom
+							figure
+								picture
+									source(srcset="img/area-text-img1.webp" type="image/webp")
+									source(srcset="img/area-text-img1.jpg" type="image/jpeg")
+									img(src="img/area-text-img1.jpg")
+								figcaption Пример названия фотографии
+							p ЮГ-Инвестбанк (ПАО) предлагает широкую номенклатуру мерных слитков из золота 5, 10, 20 и 1000 граммов. Мерные слитки — слитки драгоценных металлов массой от 1 грамма до 1000 граммов чистотой не ниже 999,9 долей химически чистого металла на 1000 долей лигатурной массы. Слитки большей массы называются стандартными.
+							p Все предлагаемые слитки изготовлены и маркированы в соответствии с отраслевыми стандартами российскими аффинажными предприятиями и содержат химически чистого основного металла не менее 99,99% лигатурной массы слитка. Вместе со слитком покупателю передается сертификат завода-изготовителя с указанием пробы, номера и массы мерного слитка.
+							p <b>Гражданство:</b> Российская Федерация.
+							p <b>Регистрация по месту жительства:</b> на территории г. Краснодара, г. Ростова-на Дону, г. Азова, г. Майкопа и населенных пунктов Краснодарского края, Ростовской области не менее 1 года.
+							p <b>Возраст от 21 года до:</b>
+							ol
+								li 68 лет (на момент погашения кредита) при условии дачи Заемщиком письменного согласия на страхование банком жизни и здоровья Заемщика от несчастных случаев и болезней в рамках договора добровольного коллективного страхования, и в случае если Заемщик не относится к следующим категориям граждан: проходящих службу в вооруженных силах; осуществляющих деятельность в области профессиональной или непрофессиональной авиации.
+								li 65 лет (на момент погашения кредита) в случае отказа Заемщика от страхования его Банком в рамках вышеперечисленным категориям граждан.
+								li 75 лет (на момент погашения кредита), при условии наличия:
+									ul
+										li Положительной кредитной истории;
+										li Имущества в собственности (автотранспорта, Российского производства не старше 5-ти лет)
+										li Поручительства физического лица.
+							p <b>Требование к поручителю:</b>
+							ol.alphabetic-list
+								li Возраст от 21 до 68 лет
+								li Наличие официального дохода, достаточного для покрытия всех обязательств поручителя
+
+							p Клиент имеет право на получение скидки к процентной ставке по кредиту в размере, указанном в <a href="#">Приложении № 1</a> в зависимости от классификации Заемщика в соответствии с утвержденным Порядком классификации Заемщиков в рамках стандартов потребительского кредитования в ЮГ–Инвестбанк (ПАО). При этом минимальная ставка по кредиту при применении скидок не может быть менее 12,4%, полная стоимость кредита составит от 12,358%.
+
+						section.benefits
+							h3.md-caption Пример подзаголовка в тексте
+							.row-title
+								h4.caption Ваши сотрудники быстро оценят преимущества зарплатных карт, потому что это:
+							.benefits-wrapper
+								.benefits-wrapper__wrap
+									.benefits-post
+										.benefits-post__wrap-icon.benefits-post__wrap-icon--change
+											img.benefits-post__icon(src="img/icon5.svg")
+										.benefits-post__wrap-text
+											p.benefits-post__text Круглосуточный доступ к денежным средствам на счете в любом банкомате, который обслуживает карты VISA/МИР
+								.benefits-wrapper__wrap
+									.benefits-post
+										.benefits-post__wrap-icon.benefits-post__wrap-icon--change
+											img.benefits-post__icon(src="img/icon6.svg")
+										.benefits-post__wrap-text
+											p.benefits-post__text Получение дополнительного дохода в виде начисленных процентов на остаток денежных средств на карточном счете
+								.benefits-wrapper__wrap
+									.benefits-post
+										.benefits-post__wrap-icon.benefits-post__wrap-icon--change
+											img.benefits-post__icon(src="img/icon7.svg")
+										.benefits-post__wrap-text
+											p.benefits-post__text Возможность самостоятельно пополнять карту наличными деньгами или банковским переводом
+								.benefits-wrapper__wrap
+									.benefits-post
+										.benefits-post__wrap-icon.benefits-post__wrap-icon--change
+											img.benefits-post__icon(src="img/icon8.svg")
+										.benefits-post__wrap-text
+											p.benefits-post__text Безопасность хранения денежных средств - в случае утраты карты Банк по заявлению ее владельца заблокирует утерянную карту и выпустит новую
+
+						section.area-text-page.border-bottom
+							p ЮГ-Инвестбанк (ПАО) предлагает широкую номенклатуру мерных слитков из золота 5, 10, 20 и 1000 граммов. Мерные слитки — слитки драгоценных металлов массой от 1 грамма до 1000 граммов чистотой не ниже 999,9 долей химически чистого металла на 1000 долей лигатурной массы. Слитки большей массы называются стандартными.
+							p Все предлагаемые слитки изготовлены и маркированы в соответствии с отраслевыми стандартами российскими аффинажными предприятиями и содержат химически чистого основного металла не менее 99,99% лигатурной массы слитка. Вместе со слитком покупателю передается сертификат завода-изготовителя с указанием пробы, номера и массы мерного слитка.
+							table
+								tr
+									td Открытие и ведение срочных вкладов физических лиц в национальной и иностранных валютах
+									td Бесплатно
+								tr
+									td Открытие вкладов «до востребования» физических лиц в национальной и иностранной валютах 
+									td Бесплатно
+								tr
+									td Открытие текущего счета
+									td 300 ₽
+								tr
+									td Открытие текущего счета для заемщиков, получающих потребительские кредиты в банке
+									td Бесплатно
+								tr
+									td Открытие счета в деле о банкротстве физического лица (за исключением специального банковского счета должника, открываемого в порядке п.5.1. ст.213.11 Федерального Закона РФ «О несостоятельности «банкротстве»)
+									td 500 ₽
+							p <b>Значение ПДН (Показателя долговой нагрузки)  до 70% (в процентах годовых)</b>
+							.wrap-table
+								table.two-table
+									tr
+										th 1г.
+										th 2г.
+										th 3г.
+										th 4г.
+										th 5г.
+										th Диапазон значений полной стоимости кредита
+									tr
+										td 14,4%
+										td 14,4%
+										td 14,4%
+										td 14,4%
+										td 14,4%
+										td 14,34% - 17,884%
+									tr
+										td 24,4%
+										td 24,4%
+										td 24,4%
+										td 24,4%
+										td 24,4%
+										td 14,34% - 17,884%
+									tr
+										td 14,4%
+										td 14,4%
+										td 14,4%
+										td 14,4%
+										td 14,4%
+										td 14,34% - 17,884%
+									tr
+										td 24,4%
+										td 24,4%
+										td 24,4%
+										td 24,4%
+										td 24,4%
+										td 14,34% - 17,884%
+
+						section.document-sect
+							h3.md-caption Документы для скачивания
+							.document-sect__wrapper
+								a.link-row-document(href="#")
+									svg.link-row-document__icon
+										use(xlink:href="img/icon-doc.svg#doc")
+									.link-row-document__wrap-text
+										span.link-row-document__caption Условия открытия и обслуживания сберегательных счетов (Приложение 7 к Условиям ДКБО)
+										span.link-row-document__info pdf, 166.38 КБ
+								a.link-row-document(href="#")
+									svg.link-row-document__icon
+										use(xlink:href="img/icon-doc.svg#doc")
+									.link-row-document__wrap-text
+										span.link-row-document__caption Приложение к стандартным тарифам «ЮГ-Инвестбанк» (ПАО) для клиентов – физических лиц
+										span.link-row-document__info pdf, 166.38 КБ
+								a.link-row-document(href="#")
+									svg.link-row-document__icon
+										use(xlink:href="img/icon-doc.svg#doc")
+									.link-row-document__wrap-text
+										span.link-row-document__caption Условия открытия и обслуживания сберегательных счетов (Приложение 7 к Условиям ДКБО)
+										span.link-row-document__info pdf, 166.38 КБ
+
+			section.down-sect.gray
+				.container
+					.down-sect__grid
+						.down-sect__wrap
+							.currency-rates
+								.currency-rates__left
+									h3.currency-rates__caption Курсы валют
+									span.currency-rates__subtitle Курс актуален на 11:50, 20.03.2020
+								.currency-rates__right
+									.currency-rates-table
+										//- .currency-rates-table__row-caption
+
+
+										.currency-rates-table__row
+											span.currency-rates-table__name USD
+											.currency-rates-table__wrap
+												span.currency-rates-table__caption Покупка
+												.currency-rates-table__val
+													span 74.90
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--down
+														use(xlink:href="img/sprite.svg#arrow-down")
+											.currency-rates-table__wrap
+												span.currency-rates-table__caption Продажа
+												.currency-rates-table__val
+													span 82.95
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--down
+														use(xlink:href="img/sprite.svg#arrow-down")
+										.currency-rates-table__row
+											span.currency-rates-table__name EUR
+											.currency-rates-table__wrap
+												.currency-rates-table__val
+													span 80.65
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--up
+														use(xlink:href="img/sprite.svg#arrow-down")
+											.currency-rates-table__wrap
+												.currency-rates-table__val
+													span 88.75
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--up
+														use(xlink:href="img/sprite.svg#arrow-down")
+
+						.down-sect__wrap
+							.contact-block
+								.contact-block__wrapper
+									h3.contact-block__title Контакты
+									.contact-block__wrap
+										a.contact-block__tel(href="tel:+78612596656") +7 (861) 259-66-56
+										button.btn-block.btn-block--three
+											span.btn-block__text заказать звонок
+										span.contact-block__caption Адрес центрального отделения
+										p.contact-block__text 350000, г. Краснодар, ул. Красная, 113
+
+
+		footer
+			include includes/footer.pug
+
+
+
+
+		include includes/script.pug

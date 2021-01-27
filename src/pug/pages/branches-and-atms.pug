@@ -1,0 +1,126 @@
+doctype html
+html(lang="ru-Ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title ИнвестБанк
+
+		include includes/link.pug
+
+	body
+		header
+			include includes/header.pug
+
+		main
+			section.bread-crumbs.gray
+				.container
+					ul.bread-crumbs__list
+						li.bread-crumbs__item
+							a.bread-crumbs__link(href="#") Главная
+						li.bread-crumbs__item
+							span.bread-crumbs__link Отделения и банкоматы
+
+			section.tabs-up.gray
+				.container
+					ul.tabs-up__list
+						li.tabs-up__item.tabs-up__item--active 
+							span Отделения
+						li.tabs-up__item 
+							span Банкоматы
+
+			section.tab-content
+				.filter-row.gray
+					.container
+						.filter-row__wrapper
+							.filter-row__wrap
+								span.filter-row__description Город
+								
+								select.map-filter__select#city
+									option(value="1") Краснодар
+									option(value="2") Москва
+									option(value="3") Санкт-Петербург
+							.tabs
+								label.tabs__wrap
+									input(type="radio" name="look" checked)
+									.tabs__item На карте
+								label.tabs__wrap
+									input(type="radio" name="look")
+									.tabs__item Списком	
+
+							.check-row
+								label.check-wrap
+									input(type="checkbox")
+									.check-wrap__square
+									span.check-wrap__text Дополнительный
+								label.check-wrap
+									input(type="checkbox")
+									.check-wrap__square
+									span.check-wrap__text Операционный
+								label.radio-wrap
+									input(type="radio" name="radio")
+									.radio-wrap__circle
+									span.radio-wrap__text Сбор данных для ЕБС
+
+			section.map(id="map")
+
+			section.down-sect.gray
+				.container
+					.down-sect__grid
+						.down-sect__wrap
+							.currency-rates
+								.currency-rates__left
+									h3.currency-rates__caption Курсы валют
+									span.currency-rates__subtitle Курс актуален на 11:50, 20.03.2020
+								.currency-rates__right
+									.currency-rates-table
+										//- .currency-rates-table__row-caption
+
+
+										.currency-rates-table__row
+											span.currency-rates-table__name USD
+											.currency-rates-table__wrap
+												span.currency-rates-table__caption Покупка
+												.currency-rates-table__val
+													span 74.90
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--down
+														use(xlink:href="img/sprite.svg#arrow-down")
+											.currency-rates-table__wrap
+												span.currency-rates-table__caption Продажа
+												.currency-rates-table__val
+													span 82.95
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--down
+														use(xlink:href="img/sprite.svg#arrow-down")
+										.currency-rates-table__row
+											span.currency-rates-table__name EUR
+											.currency-rates-table__wrap
+												.currency-rates-table__val
+													span 80.65
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--up
+														use(xlink:href="img/sprite.svg#arrow-down")
+											.currency-rates-table__wrap
+												.currency-rates-table__val
+													span 88.75
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--up
+														use(xlink:href="img/sprite.svg#arrow-down")
+
+						.down-sect__wrap
+							.contact-block
+								.contact-block__wrapper
+									h3.contact-block__title Контакты
+									.contact-block__wrap
+										a.contact-block__tel(href="tel:+78612596656") +7 (861) 259-66-56
+										button.btn-block.btn-block--three
+											span.btn-block__text заказать звонок
+										span.contact-block__caption Адрес центрального отделения
+										p.contact-block__text 350000, г. Краснодар, ул. Красная, 113
+
+
+		footer
+			include includes/footer.pug
+
+
+
+
+		include includes/script.pug
+		script(src="js/groups.js")
+		script(src="js/map-groups.js")

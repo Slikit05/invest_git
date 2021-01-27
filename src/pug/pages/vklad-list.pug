@@ -1,0 +1,138 @@
+doctype html
+html(lang="ru-Ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title ИнвестБанк
+
+		include includes/link.pug
+
+	body
+		header
+			include includes/header.pug
+
+		main
+			section.bread-crumbs.gray
+				.container
+					ul.bread-crumbs__list
+						li.bread-crumbs__item
+							a.bread-crumbs__link(href="#") Главная
+						li.bread-crumbs__item
+							a.bread-crumbs__link(href="#") Частным клиентам
+						li.bread-crumbs__item
+							span.bread-crumbs__link  Вклады
+
+			section.calculator-sect.calculator-sect--inner-offset-one.gray
+				.container
+					.row-title
+						h2.title Подберите оптимальный вклад&nbsp;&nbsp;<span class="title__line">&#8212;</span>
+					.calculator-sect-flex
+						.calculator-sect-flex__wrap
+							.calculator-range
+								span.calculator-range__name Сумма кредита, ₽
+								.calculator-range__wrap-field
+									span.calculator-range__placeholder 90 000
+									input.calculator-range__field.calculator-range__field--white#amount(type="text" name="amount")
+								.calculator-range__line#loan-amount
+								.calculator-range__row
+									span.calculator-range__before 90 000 ₽
+									span.calculator-range__after 5 000 000 ₽
+
+						.calculator-sect-flex__wrap      
+							.calculator-range
+								span.calculator-range__name Срок кредита
+								.calculator-range__wrap-field
+									span.calculator-range__placeholder 1 год
+									input.calculator-range__field.calculator-range__field--white#age(type="text" disabled)
+								.calculator-range__line#age-slider
+								.calculator-range__row
+									span.calculator-range__before 1 год
+									span.calculator-range__after 5 лет
+
+						.calculator-sect-flex__wrap-sm
+							.tabs
+								label.tabs__wrap
+									input(type="radio" name="money" checked)
+									.tabs__item Рубли, ₽
+								label.tabs__wrap
+									input(type="radio" name="money")
+									.tabs__item Доллары, $	
+								label.tabs__wrap
+									input(type="radio" name="money")
+									.tabs__item Евро, €
+
+			section.best-offers.best-offers--offset-bottom.best-offers--no-offset.gray-platform-up
+				.container
+					.best-offers__wrapper
+						.post-grid
+							include includes/post-link-two.pug							
+							+postBlockTwo('img/money1.jpg', 'img/money1.webp', 'Название монеты', '200 dollars, качество Proof', '12 000  ₽')
+							+postBlockTwo('img/money2.jpg', 'img/money2.webp', 'Название монеты', '3 рубля, качество Proof', '2 400  ₽')
+							+postBlockTwo('img/money3.jpg', 'img/money3.webp', 'Название монеты', '1 000 рублей, качество Proof', '24 000  ₽')
+
+							+postBlockTwo('img/money3.jpg', 'img/money3.webp', 'Название монеты', '1 000 рублей, качество Proof', '24 000  ₽')
+							+postBlockTwo('img/money1.jpg', 'img/money1.webp', 'Название монеты', '200 dollars, качество Proof', '12 000  ₽')
+							+postBlockTwo('img/money2.jpg', 'img/money2.webp', 'Название монеты', '3 рубля, качество Proof', '2 400  ₽')
+
+							+postBlockTwo('img/money2.jpg', 'img/money2.webp', 'Название монеты', '3 рубля, качество Proof', '2 400  ₽')
+							+postBlockTwo('img/money3.jpg', 'img/money3.webp', 'Название монеты', '1 000 рублей, качество Proof', '24 000  ₽')
+
+			section.down-sect.gray
+				.container
+					.down-sect__grid
+						.down-sect__wrap
+							.currency-rates
+								.currency-rates__left
+									h3.currency-rates__caption Курсы валют
+									span.currency-rates__subtitle Курс актуален на 11:50, 20.03.2020
+								.currency-rates__right
+									.currency-rates-table
+										//- .currency-rates-table__row-caption
+
+
+										.currency-rates-table__row
+											span.currency-rates-table__name USD
+											.currency-rates-table__wrap
+												span.currency-rates-table__caption Покупка
+												.currency-rates-table__val
+													span 74.90
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--down
+														use(xlink:href="img/sprite.svg#arrow-down")
+											.currency-rates-table__wrap
+												span.currency-rates-table__caption Продажа
+												.currency-rates-table__val
+													span 82.95
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--down
+														use(xlink:href="img/sprite.svg#arrow-down")
+										.currency-rates-table__row
+											span.currency-rates-table__name EUR
+											.currency-rates-table__wrap
+												.currency-rates-table__val
+													span 80.65
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--up
+														use(xlink:href="img/sprite.svg#arrow-down")
+											.currency-rates-table__wrap
+												.currency-rates-table__val
+													span 88.75
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--up
+														use(xlink:href="img/sprite.svg#arrow-down")
+
+						.down-sect__wrap
+							.contact-block
+								.contact-block__wrapper
+									h3.contact-block__title Контакты
+									.contact-block__wrap
+										a.contact-block__tel(href="tel:+78612596656") +7 (861) 259-66-56
+										button.btn-block.btn-block--three
+											span.btn-block__text заказать звонок
+										span.contact-block__caption Адрес центрального отделения
+										p.contact-block__text 350000, г. Краснодар, ул. Красная, 113
+
+
+		footer
+			include includes/footer.pug
+
+
+
+
+		include includes/script.pug

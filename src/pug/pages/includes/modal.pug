@@ -1,0 +1,145 @@
+.modal-container.overlay_popup(id="modal1")
+
+	.modal-container__container
+		.modal-container__wrapper
+
+
+			.my-modal.complectation
+				.my-modal__close.close-popup
+				.my-modal__block
+					h2.title Оформить кредит наличными&nbsp;&nbsp;<span class="title__line">&#8212;</span>
+					p.my-modal__text Заполните форму и наш специалист свяжется с Вами в ближайшее время
+					form.modal-form
+						.modal-form__wrapper
+							.modal-form__grid-trhee-columns
+								.modal-form__wrap
+									label.field
+										span.field__description Фамилия
+										.field__wrap
+											input.field__field(type="text" name="" placeholder="")
+								.modal-form__wrap
+									label.field
+										span.field__description Имя
+										.field__wrap
+											input.field__field(type="text" name="" placeholder="")
+								.modal-form__wrap
+									label.field
+										span.field__description Отчество (если есть)
+										.field__wrap
+											input.field__field(type="text" name="" placeholder="")
+							.modal-form__grid-two-columns      
+								.modal-form__wrap
+									label.field
+										span.field__description Телефон
+										.field__wrap
+											input.field__field(type="tel" name="" placeholder="")
+								.modal-form__wrap
+									label.field
+										span.field__description E-mail
+										.field__wrap
+											input.field__field(type="email" name="" placeholder="")
+						.my-modal__down
+							.check-form
+								label.check-form__wrap
+									input.check-form__input(type="checkbox" name="")
+									.check-form__square
+								span.check-form__text Я подтверждаю <a href="#">согласие на обработку персональных данных</a>
+
+							a.btn-block.btn-block--two.close-popup.show_popup(rel="modal2" href="#")
+								span.btn-block__text отравить
+
+
+
+.modal-container.overlay_popup(id="modal2")
+
+	.modal-container__container
+		.modal-container__wrapper
+
+
+			.my-modal.complectation
+				.my-modal__close.close-popup
+				.my-modal__block
+					h2.title Ваш запрос принят&nbsp;&nbsp;<span class="title__line">&#8212;</span>
+					p.my-modal__text Наш специалист свяжется с Вами в ближайшее время
+					.my-modal__row-center
+						a.btn-block.btn-block--two.close-popup.show_popup(rel="modal2" href="#")
+							span.btn-block__text закрыть
+
+
+.modal-container.overlay_popup(id="modal3")
+
+	.modal-container__container
+		.modal-container__wrapper
+
+
+			.my-modal.complectation
+				.my-modal__close.close-popup
+				.my-modal__block
+					h2.title Заказ звонка&nbsp;&nbsp;<span class="title__line">&#8212;</span>
+					p.my-modal__text Наш специалист свяжется с Вами в ближайшее время
+					form.modal-form
+						.modal-form__wrapper
+							.modal-form__grid-two-columns
+								.modal-form__wrap
+									label.field
+										span.field__description Фамилия
+										.field__wrap
+											input.field__field(type="text" name="" placeholder="")
+								.modal-form__wrap
+									label.field
+										span.field__description Телефон
+										.field__wrap
+											input.field__field(type="tel" name="" placeholder="")
+						.my-modal__down
+							.check-form
+								label.check-form__wrap
+									input.check-form__input(type="checkbox" name="")
+									.check-form__square
+								span.check-form__text Я подтверждаю <a href="#">согласие на обработку персональных данных</a>
+
+							a.btn-block.btn-block--two.close-popup.show_popup(rel="modal2" href="#")
+								span.btn-block__text отравить
+
+.modal-container.overlay_popup(id="modal4")
+
+	.modal-container__container
+		.modal-container__wrapper
+
+
+			.my-modal.complectation
+				.my-modal__close.close-popup
+				.my-modal__block
+					h2.title Отклик на вакансию Операционист по работе с юридическими и лицами&nbsp;&nbsp;<span class="title__line">&#8212;</span>
+					form.modal-form
+						.modal-form__wrapper
+							.modal-form__grid-trhee-columns
+								.modal-form__wrap
+									label.field
+										span.field__description Ваше имя
+										.field__wrap
+											input.field__field(type="text" name="" placeholder="")
+								.modal-form__wrap
+									label.field
+										span.field__description Телефон
+										.field__wrap
+											input.field__field(type="text" name="" placeholder="")
+								.modal-form__wrap
+									label.field
+										span.field__description E-mail
+										.field__wrap
+											input.field__field(type="e-mail" name="" placeholder="")
+						label.btn-file
+							input(type="file")
+							.btn-file__row
+								span.btn-file__text прикрепить резюме
+								svg.btn-file__icon
+									use(xlink:href="img/clip.svg#clip")
+						.my-modal__down
+							.check-form
+								label.check-form__wrap
+									input.check-form__input(type="checkbox" name="")
+									.check-form__square
+								span.check-form__text Я подтверждаю <a href="#">согласие на обработку персональных данных</a>
+
+							a.btn-block.btn-block--two.close-popup.show_popup(rel="modal2" href="#")
+								span.btn-block__text Откликнуться								

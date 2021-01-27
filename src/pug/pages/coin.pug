@@ -1,0 +1,160 @@
+doctype html
+html(lang="ru-Ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title ИнвестБанк
+
+		include includes/link.pug
+
+	body
+		header
+			include includes/header.pug
+
+		main
+			section.bread-crumbs
+				.container
+					ul.bread-crumbs__list
+						li.bread-crumbs__item
+							a.bread-crumbs__link(href="#") Главная
+						li.bread-crumbs__item
+							a.bread-crumbs__link(href="#") Частным клиентам
+						li.bread-crumbs__item
+							a.bread-crumbs__link(href="#") Продажа монет и драгметаллов
+						li.bread-crumbs__item
+							span.bread-crumbs__link Георгий Победоносец
+
+			section.inner-post
+				.container
+					.row-title
+						h2.title Георгий Победоносец&nbsp;&nbsp;<span class="title__line">&#8212;</span>
+					.inner-post__wrapper
+						.inner-post__wrap-img
+							picture
+								source(srcset="img/inner-post1.webp" type="image/webp")
+								source(srcset="img/inner-post1.jpg" type="image/jpeg")
+								img.inner-post__img(src="img/inner-post1.jpg")
+
+						.inner-post__wrap-info
+							span.inner-post__price 2 400  ₽
+							table.inner-post__table
+								tr
+									td Номинал
+									td 3 рубля
+								tr
+									td Качество
+									td АЦ
+								tr
+									td Металл, проба
+									td серебро 999/1000
+								tr
+									td Масса общая, г
+									td 31,50 (±0,35)
+								tr
+									td Содержание химически чистого металла не менее, г
+									td 31,10
+								tr
+									td Диаметр, мм
+									td 39,00 (±0,30)
+								tr
+									td Толщина, мм
+									td 3,10 (±0,35)
+								tr
+									td Тираж, шт.
+									td 100 000
+
+						.inner-post__wrap-text
+							.inner-post__area
+								h4 Аверс
+								p в центре – рельефное изображение Государственного герба Российской Федерации, над ним вдоль канта – надпись полукругом: "РОССИЙСКАЯ ФЕДЕРАЦИЯ", обрамленная с обеих сторон сдвоенными ромбами, внизу под гербом: слева – обозначения драгоценного металла и пробы, справа – содержание химически чистого металла и товарный знак монетного двора, внизу в центре в три строки – надпись: "БАНК РОССИИ", номинал монеты: "3 РУБЛЯ", год выпуска: "2019 г.".
+								h4 Реверс
+								p рельефное изображение Георгия Победоносца верхом на коне, поражающего копьем змея.
+								h4 Авторы
+								p Художники: Е.В. Крамская (аверс), А.В. Бакланов, народный художник России (реверс).
+								p Скульпторы: А.А. Долгополова (аверс), А.В. Бакланов, народный художник России (реверс).
+								p Чеканка: Московский и Санкт-Петербургский монетные дворы (ММД, СПМД).
+								p Оформление гурта: 300 рифлений.
+								h4 Историко-тематическая справка
+								p Инвестиционная монета
+								p Начиная с XIII века на Руси и в соседних с ним государствах изображение Георгия Победоносца использовалось в качестве элементов государственной символики – на княжеских печатях, штандартах, гербах, монетах. Его изображение было элементом государственного герба Российской империи, присутствует оно и на государственном гербе Российской Федерации.
+							a.link-back(href="#")
+								.link-back__arrow
+									svg
+										use(xlink:href="img/sprite.svg#arrow")
+								span назад к списку
+
+			section.sect-reclama
+				.container
+					.sect-reclama__wrapper
+						.sect-reclama__block
+							.sect-reclama__bg(style="background-color: #CBD5DE")
+							.sect-reclama__wrap-img
+								picture
+									source(srcset="img/reclama6.webp" type="image/webp")
+									source(srcset="img/reclama6.png" type="image/png")
+									img.sect-reclama__img(src="img/reclama6.png")
+							.sect-reclama__wrap-text
+								h3.sect-reclama__title.sect-reclama__title--white +7 (861) 253-65-20
+								p.sect-reclama__text Подразделение банка по работе с драгоценными металлами
+								button.btn-block.btn-block--two
+									span.btn-block__text заказать звонок						
+
+			section.down-sect.gray
+				.container
+					.down-sect__grid
+						.down-sect__wrap
+							.currency-rates
+								.currency-rates__left
+									h3.currency-rates__caption Курсы валют
+									span.currency-rates__subtitle Курс актуален на 11:50, 20.03.2020
+								.currency-rates__right
+									.currency-rates-table
+										//- .currency-rates-table__row-caption
+
+
+										.currency-rates-table__row
+											span.currency-rates-table__name USD
+											.currency-rates-table__wrap
+												span.currency-rates-table__caption Покупка
+												.currency-rates-table__val
+													span 74.90
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--down
+														use(xlink:href="img/sprite.svg#arrow-down")
+											.currency-rates-table__wrap
+												span.currency-rates-table__caption Продажа
+												.currency-rates-table__val
+													span 82.95
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--down
+														use(xlink:href="img/sprite.svg#arrow-down")
+										.currency-rates-table__row
+											span.currency-rates-table__name EUR
+											.currency-rates-table__wrap
+												.currency-rates-table__val
+													span 80.65
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--up
+														use(xlink:href="img/sprite.svg#arrow-down")
+											.currency-rates-table__wrap
+												.currency-rates-table__val
+													span 88.75
+													svg.currency-rates-table__arrow.currency-rates-table__arrow--up
+														use(xlink:href="img/sprite.svg#arrow-down")
+
+						.down-sect__wrap
+							.contact-block
+								.contact-block__wrapper
+									h3.contact-block__title Контакты
+									.contact-block__wrap
+										a.contact-block__tel(href="tel:+78612596656") +7 (861) 259-66-56
+										button.btn-block.btn-block--three
+											span.btn-block__text заказать звонок
+										span.contact-block__caption Адрес центрального отделения
+										p.contact-block__text 350000, г. Краснодар, ул. Красная, 113
+
+
+		footer
+			include includes/footer.pug
+
+
+
+
+		include includes/script.pug
