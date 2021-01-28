@@ -2311,3 +2311,32 @@
     max-width: inherit;
   }
 }
+
+.feedback {
+  margin-bottom: 78px;
+  @media (max-width: 575px) {
+    margin-bottom: 48px;
+  }
+  &__block {
+    margin-bottom: 23px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__flex {
+    margin-bottom: 33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @media (max-width: 575px) {
+      display: block;
+      margin-bottom: 23px;
+      .check-form {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
