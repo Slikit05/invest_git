@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ru-Ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ИнвестБанк</title>
+    <link rel="stylesheet" type="text/css" href="css/normalise.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+  </head>
+  <body>
+    <header>
+      <section class="header-page">
+        <div class="container">
+          <div class="header-page__container">
+            <div class="header-page__up">
+              <div class="header-page__left"><a class="logo" href="#">
+                  <svg class="logo__img">
+                    <use xlink:href="img/logo.svg#logo"></use>
+                  </svg></a>
+                <nav class="header-page__nav">
+                  <div class="header-page__field-select"> <span>Частным клиентам</span>
+                    <svg>
+                      <use xlink:href="img/sprite.svg#arrow-down"></use>
+                    </svg>
+                  </div>
+                  <ul class="header-page__list">
+                    <li class="header-page__item"><a class="header-page__link header-page__link--active" href="#">Частным клиентам</a></li>
+                    <li class="header-page__item"><a class="header-page__link" href="#">Корпоративным клиентам</a></li>
+                    <li class="header-page__item"><a class="header-page__link" href="#">О банке</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="header-page__right"><a class="link-map" href="#">
+                  <svg class="link-map__icon">
+                    <use xlink:href="img/point.svg#point"></use>
+                  </svg><span class="link-map__text">ОТДЕЛЕНИЯ И БАНКОМАТЫ</span></a>
+                <div class="btn-block btn-block--first btn-block--hover"><span class="btn-block__text">Интернет-банк</span>
+                  <ul class="navigation-dropdown">
+                    <li class="navigation-dropdown__item"><a class="navigation-dropdown__link" href="#">Для частных клиентов</a></li>
+                    <li class="navigation-dropdown__item"><a class="navigation-dropdown__link" href="#">Для корпоративных клиентов</a></li>
+                  </ul>
+                </div>
+                <div class="search-icon">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#search"></use>
+                  </svg>
+                </div>
+                <div class="search-line">
+                  <form class="search-line__form" action="">
+                    <label class="search-line__wrap">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#search"></use>
+                      </svg>
+                      <input class="search-line__field" type="search" name="search-header" placeholder="Введите ключевую фразу">
+                    </label>
+                  </form>
+                  <div class="search-line__close"></div>
+                </div>
+                <div class="burger">
+                  <div class="burger__line"></div>
+                  <div class="burger__line"></div>
+                  <div class="burger__line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="header-page__down">
+              <nav class="navigation">
+                <ul class="navigation__list" id="navigationList">
+                  <li class="navigation__item"><a class="navigation__link navigation__link--active" href="#">Акции</a></li>
+                  <li class="navigation__item"><a class="navigation__link" href="#">Кредитование</a></li>
+                  <li class="navigation__item"><a class="navigation__link" href="#">Вклады</a></li>
+                  <li class="navigation__item navigation__item--dropdown"><a class="navigation__link" href="#">Пластиковые карты</a>
+                    <ul class="navigation-dropdown">
+                      <li class="navigation-dropdown__item"><a class="navigation-dropdown__link navigation-dropdown__link--active" href="#">Корпоративная карта</a></li>
+                      <li class="navigation-dropdown__item"><a class="navigation-dropdown__link" href="#">Эквайринг</a></li>
+                      <li class="navigation-dropdown__item"><a class="navigation-dropdown__link" href="#">Зарплатные проекты</a></li>
+                    </ul>
+                  </li>
+                  <li class="navigation__item"><a class="navigation__link" href="#">Коммунальные и другие платежи</a></li>
+                  <li class="navigation__item"><a class="navigation__link" href="#">Продажа монет и драгметаллов</a></li>
+                  <li class="navigation__item"><a class="navigation__link" href="#">Аренда индивидуальных ячеек</a></li>
+                  <li class="navigation__item"><a class="navigation__link" href="#">Аренда индивидуальных ячеек</a></li>
+                  <li class="navigation__item"><a class="navigation__link" href="#">Аренда индивидуальных ячеек</a></li>
+                  <li class="navigation__item"><a class="navigation__link" href="#">Аренда индивидуальных ячеек</a></li>
+                  <li class="navigation__item navigation__item--more">
+                    <div class="navigation__more"><a class="navigation__link navigation__link" href="#">ЕЩЕ</a>
+                      <svg>
+                        <use xlink:href="img/sprite.svg#arrow-down"></use>
+                      </svg>
+                    </div>
+                    <ul class="navigation-dropdown">
+                      <li class="navigation-dropdown__item"><a class="navigation-dropdown__link" href="#">Переводы денежных средств</a></li>
+                      <li class="navigation-dropdown__item"><a class="navigation-dropdown__link" href="#">Тарифы</a></li>
+                      <li class="navigation-dropdown__item"><a class="navigation-dropdown__link" href="#">Дистанционное банковское обслуживание</a></li>
+                      <li class="navigation-dropdown__item"><a class="navigation-dropdown__link" href="#">Критерии отнесения клиентов к категории клиента-иностранного налогоплательщика</a></li>
+                      <li class="navigation-dropdown__item"><a class="navigation-dropdown__link" href="#">Сбор данных для ЕБС</a></li>
+                      <li class="navigation__item navigation__item--dropdown">
+                        <div class="navigation__item-wrap-flex"><a class="navigation__link" href="#">Пластиковые карты</a>
+                          <svg>
+                            <use xlink:href="img/sprite.svg#arrow-down"></use>
+                          </svg>
+                        </div>
+                        <div class="navigation-dropdown-two">
+                          <ul class="footer-list">
+                            <li class="footer-list__sub-item"><a class="footer-list__sub-link" href="#">Корпоративная карта</a></li>
+                            <li class="footer-list__sub-item"><a class="footer-list__sub-link" href="#">Эквайринг</a></li>
+                            <li class="footer-list__sub-item"><a class="footer-list__sub-link" href="#">Зарплатные проекты</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+              <div class="search-icon">
+                <svg>
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </div>
+              <div class="search-line">
+                <form class="search-line__form" action="">
+                  <label class="search-line__wrap">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#search"></use>
+                    </svg>
+                    <input class="search-line__field" type="search" name="search-header" placeholder="Введите ключевую фразу">
+                  </label>
+                </form>
+                <div class="search-line__close"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="mobile-menu">
+          <div class="mobile-menu__feedback"><a class="link-map" href="#">
+              <svg class="link-map__icon">
+                <use xlink:href="img/point.svg#point"></use>
+              </svg><span class="link-map__text">ОТДЕЛЕНИЯ И БАНКОМАТЫ</span></a>
+            <div class="nav-mobile__item nav-mobile__item--change"><a class="nav-mobile__row" href="#">
+                <div class="btn-block btn-block--first"><span class="btn-block__text">Интернет-банк</span></div></a>
+              <div class="nav-mobile-drop">
+                <ul class="nav-mobile-drop__list">
+                  <li class="nav-mobile-drop__item"><a class="nav-mobile-drop__link" href="#">Для частных клиентов</a></li>
+                  <li class="nav-mobile-drop__item"><a class="nav-mobile-drop__link" href="#">Для корпоративных клиентов</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-menu__up"><a class="mobile-menu__link" href="#">Частным<br> клиентам</a><a class="mobile-menu__link mobile-menu__link--active" href="#">Корпоративным<br> клиентам</a><a class="mobile-menu__link" href="#">О банке</a></div>
+          <nav class="nav-mobile">
+            <ul class="nav-mobile__list">
+              <li class="nav-mobile__item"><a class="nav-mobile__row" href="#"><span class="nav-mobile__link">Акции</span>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-down"></use>
+                  </svg></a></li>
+              <li class="nav-mobile__item"><a class="nav-mobile__row nav-mobile__row--active" href="#"><span class="nav-mobile__link">Кредитование</span>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-down"></use>
+                  </svg></a></li>
+              <li class="nav-mobile__item"><a class="nav-mobile__row" href="#"><span class="nav-mobile__link">Депозиты</span>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-down"></use>
+                  </svg></a></li>
+              <li class="nav-mobile__item"><a class="nav-mobile__row" href="#"><span class="nav-mobile__link">Пластиковые карты</span>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-down"></use>
+                  </svg></a>
+                <div class="nav-mobile-drop">
+                  <ul class="nav-mobile-drop__list">
+                    <li class="nav-mobile-drop__item"><a class="nav-mobile-drop__link nav-mobile-drop__link--active" href="#">Корпоративная карта</a></li>
+                    <li class="nav-mobile-drop__item"><a class="nav-mobile-drop__link" href="#">Эквайринг</a></li>
+                    <li class="nav-mobile-drop__item"><a class="nav-mobile-drop__link" href="#">Зарплатные проекты</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-mobile__item"><a class="nav-mobile__row" href="#"><span class="nav-mobile__link">Операции в иностранной валюте</span>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-down"></use>
+                  </svg></a></li>
+              <li class="nav-mobile__item"><a class="nav-mobile__row" href="#"><span class="nav-mobile__link">Расчетно-кассовое обслуживание</span>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-down"></use>
+                  </svg></a></li>
+              <li class="nav-mobile__item"><a class="nav-mobile__row" href="#"><span class="nav-mobile__link">Тарифы</span>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-down"></use>
+                  </svg></a></li>
+              <li class="nav-mobile__item"><a class="nav-mobile__row" href="#"><span class="nav-mobile__link">Дистанционное банковское обслуживание</span>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-down"></use>
+                  </svg></a></li>
+              <li class="nav-mobile__item"><a class="nav-mobile__row" href="#"><span class="nav-mobile__link">Дистанционное банковское обслуживание</span>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-down"></use>
+                  </svg></a></li>
+              <li class="nav-mobile__item"><a class="nav-mobile__row" href="#"><span class="nav-mobile__link">Дистанционное банковское обслуживание</span>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-down"></use>
+                  </svg></a></li>
+              <li class="nav-mobile__item"><a class="nav-mobile__row" href="#"><span class="nav-mobile__link">Дистанционное банковское обслуживание</span>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-down"></use>
+                  </svg></a></li>
+            </ul>
+          </nav>
+        </section>
+      </section><a class="link-up" href="#">
+        <svg>
+          <use xlink:href="img/arrows-two.svg#arrow-up"></use>
+        </svg></a>
+    </header>
+    <main>
+      <section class="bread-crumbs">
+        <div class="container">
+          <ul class="bread-crumbs__list">
+            <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="#">Главная</a></li>
+            <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="#">Реализация имущества</a></li>
+            <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="#">Жилая недвижимость</a></li>
+            <li class="bread-crumbs__item"><span class="bread-crumbs__link">2-этажный жилой дом 157,4 кв.м.</span></li>
+          </ul>
+        </div>
+      </section>
+      <section class="inner-post">
+        <div class="container">
+          <div class="row-title">
+            <h2 class="title">2-этажный жилой дом 157,4 кв.м.&nbsp;&nbsp;<span class="title__line">&#8212;</span></h2>
+          </div>
+          <div class="inner-post__wrapper">
+            <div class="inner-post__wrap-slider">
+              <div class="post-inner post-inner--change">
+                <div class="post-inner-slider">
+                  <div class="post-inner-slider__up swiper-container gallery-top">
+                    <div class="post-inner-slider__wrap swiper-wrapper">
+                      <div class="post-inner-slider__slide-lg swiper-slide"><img class="post-inner-slider__img-lg" src="img/post-inner-slider-img1.jpg"></div>
+                      <div class="post-inner-slider__slide-lg swiper-slide"><img class="post-inner-slider__img-lg" src="img/post-inner-slider-img1.jpg"></div>
+                      <div class="post-inner-slider__slide-lg swiper-slide"><img class="post-inner-slider__img-lg" src="img/post-inner-slider-img1.jpg"></div>
+                      <div class="post-inner-slider__slide-lg swiper-slide"><img class="post-inner-slider__img-lg" src="img/post-inner-slider-img1.jpg"></div>
+                      <div class="post-inner-slider__slide-lg swiper-slide"><img class="post-inner-slider__img-lg" src="img/post-inner-slider-img1.jpg"></div>
+                      <div class="post-inner-slider__slide-lg swiper-slide"><img class="post-inner-slider__img-lg" src="img/post-inner-slider-img1.jpg"></div>
+                    </div>
+                  </div>
+                  <div class="post-inner-slider__down swiper-container gallery-thumbs">
+                    <div class="post-inner-slider__column swiper-wrapper">
+                      <div class="post-inner-slider__slide-sm swiper-slide"><img class="post-inner-slider__img-sm" src="img/post-inner-slider-sm-img1.jpg"></div>
+                      <div class="post-inner-slider__slide-sm swiper-slide"><img class="post-inner-slider__img-sm" src="img/post-inner-slider-sm-img1.jpg"></div>
+                      <div class="post-inner-slider__slide-sm swiper-slide"><img class="post-inner-slider__img-sm" src="img/post-inner-slider-sm-img1.jpg"></div>
+                      <div class="post-inner-slider__slide-sm swiper-slide"><img class="post-inner-slider__img-sm" src="img/post-inner-slider-sm-img1.jpg"></div>
+                      <div class="post-inner-slider__slide-sm swiper-slide"><img class="post-inner-slider__img-sm" src="img/post-inner-slider-sm-img1.jpg"></div>
+                      <div class="post-inner-slider__slide-sm swiper-slide"><img class="post-inner-slider__img-sm" src="img/post-inner-slider-sm-img1.jpg"></div>
+                      <div class="post-inner-slider__slide-sm post-inner-slider__slide-sm--value"><a class="post-inner-slider__item" href="javascript:;">
+                          <div class="post-inner-slider__number-wrap">еще +<span class="post-inner-slider__number"></span></div></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="inner-post__wrap-info"><span class="inner-post__price">3 500 000 ₽</span><span class="inner-post__address">Адыгея, Тахтамукайский р-н, пгт. Яблоновский, ул. Кубанская Набережная, д.2</span>
+              <table class="inner-post__table">
+                <tr>
+                  <td>Площадь</td>
+                  <td>157,4 кв.м.</td>
+                </tr>
+                <tr>
+                  <td>Год постройки</td>
+                  <td>2014</td>
+                </tr>
+                <tr>
+                  <td>Площадь участка</td>
+                  <td>300 кв.м.</td>
+                </tr>
+              </table>
+              <div class="inner-post__info-area">
+                <p>2-этажный жилой дом общей площадью 157,4 кв.м. Дом состоит из 4 жилых комнат, большой кухни&#8209;столовой (41,7 кв.м.)</p>
+                <p>Дом с выходом на террасу. Имеется два санузла на каждом этаже. Газоснабжение, водопровод — центральные. Канализация — автономная. Дом расположен в новом коттеджном поселке, недалеко от р.Кубань.</p>
+                <p>Категория земель: Земли населенных пунктов —для индивидуального жилищного строительства</p>
+                <p>Кадастровый номер: 01:05:3009003:784</p>
+              </div>
+            </div>
+            <div class="inner-post__wrap-content">
+              <div class="accordion-wrapper accordion-wrapper--sm-offset">
+                <div class="accordion">
+                  <div class="accordion__up">
+                    <h3 class="accordion__title">График торгов</h3>
+                    <div class="accordion__arrow">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#arrow"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="accordion__content">
+                    <div class="bargaining"><span class="bargaining__data">Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b></span>
+                      <div class="bargaining__row"><span class="bargaining__caption">Цена реализации</span><span class="bargaining__price">1 189 331,14 ₽</span></div>
+                    </div>
+                    <div class="bargaining"><span class="bargaining__data">Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b></span>
+                      <div class="bargaining__row"><span class="bargaining__caption">Цена реализации</span><span class="bargaining__price">1 189 331,14 ₽</span></div>
+                    </div>
+                    <div class="bargaining"><span class="bargaining__data">Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b></span>
+                      <div class="bargaining__row"><span class="bargaining__caption">Цена реализации</span><span class="bargaining__price">1 189 331,14 ₽</span></div>
+                    </div>
+                    <div class="bargaining"><span class="bargaining__data">Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b></span>
+                      <div class="bargaining__row"><span class="bargaining__caption">Цена реализации</span><span class="bargaining__price">1 189 331,14 ₽</span></div>
+                    </div>
+                    <div class="bargaining"><span class="bargaining__data">Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b></span>
+                      <div class="bargaining__row"><span class="bargaining__caption">Цена реализации</span><span class="bargaining__price">1 189 331,14 ₽</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion">
+                  <div class="accordion__up">
+                    <h3 class="accordion__title">Правила подачи заявок</h3>
+                    <div class="accordion__arrow">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#arrow"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="accordion__content">
+                    <div class="bargaining"><span class="bargaining__data">Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b></span>
+                      <div class="bargaining__row"><span class="bargaining__caption">Цена реализации</span><span class="bargaining__price">1 189 331,14 ₽</span></div>
+                    </div>
+                    <div class="bargaining"><span class="bargaining__data">Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b></span>
+                      <div class="bargaining__row"><span class="bargaining__caption">Цена реализации</span><span class="bargaining__price">1 189 331,14 ₽</span></div>
+                    </div>
+                    <div class="bargaining"><span class="bargaining__data">Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b></span>
+                      <div class="bargaining__row"><span class="bargaining__caption">Цена реализации</span><span class="bargaining__price">1 189 331,14 ₽</span></div>
+                    </div>
+                    <div class="bargaining"><span class="bargaining__data">Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b></span>
+                      <div class="bargaining__row"><span class="bargaining__caption">Цена реализации</span><span class="bargaining__price">1 189 331,14 ₽</span></div>
+                    </div>
+                    <div class="bargaining"><span class="bargaining__data">Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b></span>
+                      <div class="bargaining__row"><span class="bargaining__caption">Цена реализации</span><span class="bargaining__price">1 189 331,14 ₽</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion">
+                  <div class="accordion__up">
+                    <h3 class="accordion__title">Документы</h3>
+                    <div class="accordion__arrow">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#arrow"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="accordion__content">
+                    <div class="bargaining"><span class="bargaining__data">Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b></span>
+                      <div class="bargaining__row"><span class="bargaining__caption">Цена реализации</span><span class="bargaining__price">1 189 331,14 ₽</span></div>
+                    </div>
+                    <div class="bargaining"><span class="bargaining__data">Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b></span>
+                      <div class="bargaining__row"><span class="bargaining__caption">Цена реализации</span><span class="bargaining__price">1 189 331,14 ₽</span></div>
+                    </div>
+                    <div class="bargaining"><span class="bargaining__data">Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b></span>
+                      <div class="bargaining__row"><span class="bargaining__caption">Цена реализации</span><span class="bargaining__price">1 189 331,14 ₽</span></div>
+                    </div>
+                    <div class="bargaining"><span class="bargaining__data">Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b></span>
+                      <div class="bargaining__row"><span class="bargaining__caption">Цена реализации</span><span class="bargaining__price">1 189 331,14 ₽</span></div>
+                    </div>
+                    <div class="bargaining"><span class="bargaining__data">Дата начала проведения торгов: <b>26.11.2019 г. — 03.12.2019 г.</b></span>
+                      <div class="bargaining__row"><span class="bargaining__caption">Цена реализации</span><span class="bargaining__price">1 189 331,14 ₽								</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div><a class="link-back" href="#">
+                <div class="link-back__arrow">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </div><span>назад к списку</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="down-sect gray">
+        <div class="container">
+          <div class="down-sect__grid">
+            <div class="down-sect__wrap">
+              <div class="currency-rates">
+                <div class="currency-rates__left">
+                  <h3 class="currency-rates__caption">Курсы валют</h3><span class="currency-rates__subtitle">Курс актуален на 11:50, 20.03.2020</span>
+                </div>
+                <div class="currency-rates__right">
+                  <div class="currency-rates-table">
+                    <div class="currency-rates-table__row"><span class="currency-rates-table__name">USD</span>
+                      <div class="currency-rates-table__wrap"><span class="currency-rates-table__caption">Покупка</span>
+                        <div class="currency-rates-table__val"><span>74.90</span>
+                          <svg class="currency-rates-table__arrow currency-rates-table__arrow--down">
+                            <use xlink:href="img/sprite.svg#arrow-down"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="currency-rates-table__wrap"><span class="currency-rates-table__caption">Продажа</span>
+                        <div class="currency-rates-table__val"><span>82.95</span>
+                          <svg class="currency-rates-table__arrow currency-rates-table__arrow--down">
+                            <use xlink:href="img/sprite.svg#arrow-down"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="currency-rates-table__row"><span class="currency-rates-table__name">EUR</span>
+                      <div class="currency-rates-table__wrap">
+                        <div class="currency-rates-table__val"><span>80.65</span>
+                          <svg class="currency-rates-table__arrow currency-rates-table__arrow--up">
+                            <use xlink:href="img/sprite.svg#arrow-down"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="currency-rates-table__wrap">
+                        <div class="currency-rates-table__val"><span>88.75</span>
+                          <svg class="currency-rates-table__arrow currency-rates-table__arrow--up">
+                            <use xlink:href="img/sprite.svg#arrow-down"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="down-sect__wrap">
+              <div class="contact-block">
+                <div class="contact-block__wrapper">
+                  <h3 class="contact-block__title">Контакты</h3>
+                  <div class="contact-block__wrap"><a class="contact-block__tel" href="tel:+78612596656">+7 (861) 259-66-56</a>
+                    <button class="btn-block btn-block--three"><span class="btn-block__text">заказать звонок</span></button><span class="contact-block__caption">Адрес центрального отделения</span>
+                    <p class="contact-block__text">350000, г. Краснодар, ул. Красная, 113</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="page-footer">
+        <div class="container">
+          <div class="page-footer__up">
+            <div class="page-footer__grid">
+              <div class="page-footer__wrap">
+                <nav class="footer-nav">
+                  <div class="footer-nav__up"><a href="#">
+                      <h4 class="footer-nav__title">ЧАСТНЫМ КЛИЕНТАМ</h4></a>
+                    <svg>
+                      <use xlink:href="img/sprite.svg#arrow-down"></use>
+                    </svg>
+                  </div>
+                  <ul class="footer-list">
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Акции</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Кредитование</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Вклады</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Пластиковые карты</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Коммунальные и другие платежи</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Продажа монет и драгметаллов</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Аренда индивидуальных ячеек</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Переводы денежных средств</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Тарифы</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Дистанционное банковское обслуживание</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Критерии отнесения клиентов к категории клиента - иностранного налогоплательщика</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Сбор данных для ЕБС</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Отделения и банкоматы</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="page-footer__wrap">
+                <nav class="footer-nav">
+                  <div class="footer-nav__up"><a href="#">
+                      <h4 class="footer-nav__title">корпоративным КЛИЕНТАМ</h4></a>
+                    <svg>
+                      <use xlink:href="img/sprite.svg#arrow-down"></use>
+                    </svg>
+                  </div>
+                  <ul class="footer-list">
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Акции</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Кредитование</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Депозиты</a></li>
+                    <li class="footer-list__item">
+                      <nav class="footer-nav">
+                        <div class="footer-nav__up">
+                          <h4 class="footer-nav__caption">Пластиковые карты</h4>
+                          <svg>
+                            <use xlink:href="img/sprite.svg#arrow-down"></use>
+                          </svg>
+                        </div>
+                        <ul class="footer-list">
+                          <li class="footer-list__sub-item"><a class="footer-list__sub-link" href="#">Корпоративная карта</a></li>
+                          <li class="footer-list__sub-item"><a class="footer-list__sub-link" href="#">Эквайринг</a></li>
+                          <li class="footer-list__sub-item"><a class="footer-list__sub-link" href="#">Зарплатные проекты</a></li>
+                        </ul>
+                      </nav>
+                    </li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Операции в иностранной валюте</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Расчетно-кассовое обслуживание</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Тарифы</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Дистанционное банковское обслуживание</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="page-footer__wrap">
+                <nav class="footer-nav">
+                  <div class="footer-nav__up"><a href="#">
+                      <h4 class="footer-nav__title">О БАНКЕ</h4></a>
+                    <svg>
+                      <use xlink:href="img/sprite.svg#arrow-down"></use>
+                    </svg>
+                  </div>
+                  <ul class="footer-list">
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">История банка</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Реквизиты</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Раскрытие информации</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Банк сегодня</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Юридический адрес</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Финансовые показатели</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Перечень инсайдерской информации</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Раскрытие информации профессиональным участником рынка ценных бумаг</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Новости</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Вакансии</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Обработка персональных данных</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Реализация имущества</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Руководство				</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="page-footer__wrap">
+                <nav class="footer-nav">
+                  <ul class="footer-list">
+                    <li class="footer-list__item"><a class="footer-nav__bold" href="#">Информация о лицах, под контролем либо значительным влиянием которых находится банк</a></li>
+                    <li class="footer-list__item"><a class="footer-nav__bold" href="#">Новости</a></li>
+                    <li class="footer-list__item"><a class="footer-nav__bold" href="#">Тарифы</a></li>
+                    <li class="footer-list__item"><a class="footer-nav__bold" href="#">Информация о максимальных процентных ставках</a></li>
+                    <li class="footer-list__item"><a class="footer-nav__bold" href="#">Реализация имущества</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="page-footer__down">
+            <div class="page-footer__left"><a class="logo" href="#">
+                <svg class="logo__img">
+                  <use xlink:href="img/logo.svg#logo"></use>
+                </svg></a><span class="page-footer__text">© 2002-2020 «ЮГ-Инвестбанк» (ПАО). Универсальная лицензия ЦБ РФ 2772 <a href="#">Старая версия сайта</a></span></div>
+            <div class="page-footer__right">
+              <div class="created"><span class="created__text">Создание сайта</span><a class="created__link" href="https://very-good.ru/">VERY GOOD</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="modal-container overlay_popup" id="modal1">
+        <div class="modal-container__container">
+          <div class="modal-container__wrapper">
+            <div class="my-modal complectation">
+              <div class="my-modal__close close-popup"></div>
+              <div class="my-modal__block">
+                <h2 class="title">Оформить кредит наличными&nbsp;&nbsp;<span class="title__line">&#8212;</span></h2>
+                <p class="my-modal__text">Заполните форму и наш специалист свяжется с Вами в ближайшее время</p>
+                <form class="modal-form">
+                  <div class="modal-form__wrapper">
+                    <div class="modal-form__grid-trhee-columns">
+                      <div class="modal-form__wrap">
+                        <label class="field"><span class="field__description">Фамилия</span>
+                          <div class="field__wrap">
+                            <input class="field__field" type="text" name="" placeholder="">
+                          </div>
+                        </label>
+                      </div>
+                      <div class="modal-form__wrap">
+                        <label class="field"><span class="field__description">Имя</span>
+                          <div class="field__wrap">
+                            <input class="field__field" type="text" name="" placeholder="">
+                          </div>
+                        </label>
+                      </div>
+                      <div class="modal-form__wrap">
+                        <label class="field"><span class="field__description">Отчество (если есть)</span>
+                          <div class="field__wrap">
+                            <input class="field__field" type="text" name="" placeholder="">
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="modal-form__grid-two-columns">
+                      <div class="modal-form__wrap">
+                        <label class="field"><span class="field__description">Телефон</span>
+                          <div class="field__wrap">
+                            <input class="field__field" type="tel" name="" placeholder="">
+                          </div>
+                        </label>
+                      </div>
+                      <div class="modal-form__wrap">
+                        <label class="field"><span class="field__description">E-mail</span>
+                          <div class="field__wrap">
+                            <input class="field__field" type="email" name="" placeholder="">
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-modal__down">
+                    <div class="check-form">
+                      <label class="check-form__wrap">
+                        <input class="check-form__input" type="checkbox" name="">
+                        <div class="check-form__square"></div>
+                      </label><span class="check-form__text">Я подтверждаю <a href="#">согласие на обработку персональных данных</a></span>
+                    </div><a class="btn-block btn-block--two close-popup show_popup" rel="modal2" href="#"><span class="btn-block__text">отравить</span></a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-container overlay_popup" id="modal2">
+        <div class="modal-container__container">
+          <div class="modal-container__wrapper">
+            <div class="my-modal complectation">
+              <div class="my-modal__close close-popup"></div>
+              <div class="my-modal__block">
+                <h2 class="title">Ваш запрос принят&nbsp;&nbsp;<span class="title__line">&#8212;</span></h2>
+                <p class="my-modal__text">Наш специалист свяжется с Вами в ближайшее время</p>
+                <div class="my-modal__row-center"><a class="btn-block btn-block--two close-popup show_popup" rel="modal2" href="#"><span class="btn-block__text">закрыть</span></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-container overlay_popup" id="modal3">
+        <div class="modal-container__container">
+          <div class="modal-container__wrapper">
+            <div class="my-modal complectation">
+              <div class="my-modal__close close-popup"></div>
+              <div class="my-modal__block">
+                <h2 class="title">Заказ звонка&nbsp;&nbsp;<span class="title__line">&#8212;</span></h2>
+                <p class="my-modal__text">Наш специалист свяжется с Вами в ближайшее время</p>
+                <form class="modal-form">
+                  <div class="modal-form__wrapper">
+                    <div class="modal-form__grid-two-columns">
+                      <div class="modal-form__wrap">
+                        <label class="field"><span class="field__description">Фамилия</span>
+                          <div class="field__wrap">
+                            <input class="field__field" type="text" name="" placeholder="">
+                          </div>
+                        </label>
+                      </div>
+                      <div class="modal-form__wrap">
+                        <label class="field"><span class="field__description">Телефон</span>
+                          <div class="field__wrap">
+                            <input class="field__field" type="tel" name="" placeholder="">
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-modal__down">
+                    <div class="check-form">
+                      <label class="check-form__wrap">
+                        <input class="check-form__input" type="checkbox" name="">
+                        <div class="check-form__square"></div>
+                      </label><span class="check-form__text">Я подтверждаю <a href="#">согласие на обработку персональных данных</a></span>
+                    </div><a class="btn-block btn-block--two close-popup show_popup" rel="modal2" href="#"><span class="btn-block__text">отравить</span></a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-container overlay_popup" id="modal4">
+        <div class="modal-container__container">
+          <div class="modal-container__wrapper">
+            <div class="my-modal complectation">
+              <div class="my-modal__close close-popup"></div>
+              <div class="my-modal__block">
+                <h2 class="title">Отклик на вакансию Операционист по работе с юридическими и лицами&nbsp;&nbsp;<span class="title__line">&#8212;</span></h2>
+                <form class="modal-form">
+                  <div class="modal-form__wrapper">
+                    <div class="modal-form__grid-trhee-columns">
+                      <div class="modal-form__wrap">
+                        <label class="field"><span class="field__description">Ваше имя</span>
+                          <div class="field__wrap">
+                            <input class="field__field" type="text" name="" placeholder="">
+                          </div>
+                        </label>
+                      </div>
+                      <div class="modal-form__wrap">
+                        <label class="field"><span class="field__description">Телефон</span>
+                          <div class="field__wrap">
+                            <input class="field__field" type="text" name="" placeholder="">
+                          </div>
+                        </label>
+                      </div>
+                      <div class="modal-form__wrap">
+                        <label class="field"><span class="field__description">E-mail</span>
+                          <div class="field__wrap">
+                            <input class="field__field" type="e-mail" name="" placeholder="">
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <label class="btn-file">
+                    <input type="file">
+                    <div class="btn-file__row"><span class="btn-file__text">прикрепить резюме</span>
+                      <svg class="btn-file__icon">
+                        <use xlink:href="img/clip.svg#clip"></use>
+                      </svg>
+                    </div>
+                  </label>
+                  <div class="my-modal__down">
+                    <div class="check-form">
+                      <label class="check-form__wrap">
+                        <input class="check-form__input" type="checkbox" name="">
+                        <div class="check-form__square"></div>
+                      </label><span class="check-form__text">Я подтверждаю <a href="#">согласие на обработку персональных данных</a></span>
+                    </div><a class="btn-block btn-block--two close-popup show_popup" rel="modal2" href="#"><span class="btn-block__text">Откликнуться								</span></a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/jquery.ui.touch-punch.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/modernizr-custom.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/svgxuse.min.js"></script>
+    <script src="js/main.js"></script><!--[if !IE]>-->
+    <script src="js/slider-first-screen.js"></script><!--<![endif]-->
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/post-slider.js"></script>
+  </body>
+</html>
