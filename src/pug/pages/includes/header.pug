@@ -25,8 +25,13 @@ section.header-page
 							use(xlink:href="img/point.svg#point")
 						//- img.link-map__icon(src="img/point.svg")
 						span.link-map__text ОТДЕЛЕНИЯ И БАНКОМАТЫ
-					a.btn-block.btn-block--first(href="#")
+					.btn-block.btn-block--first.btn-block--hover
 						span.btn-block__text Интернет-банк
+						ul.navigation-dropdown
+							li.navigation-dropdown__item
+								a.navigation-dropdown__link(href="#") Для частных клиентов
+							li.navigation-dropdown__item
+								a.navigation-dropdown__link(href="#") Для корпоративных клиентов
 
 					.search-icon
 						svg
@@ -123,8 +128,17 @@ section.header-page
 				svg.link-map__icon
 					use(xlink:href="img/point.svg#point")
 				span.link-map__text ОТДЕЛЕНИЯ И БАНКОМАТЫ
-			a.btn-block.btn-block--first(href="#")
-				span.btn-block__text Интернет-банк
+
+			.nav-mobile__item.nav-mobile__item--change
+				a.nav-mobile__row(href="#")
+					.btn-block.btn-block--first
+						span.btn-block__text Интернет-банк
+				.nav-mobile-drop
+					ul.nav-mobile-drop__list
+						li.nav-mobile-drop__item
+							a.nav-mobile-drop__link(href='#') Для частных клиентов
+						li.nav-mobile-drop__item
+							a.nav-mobile-drop__link(href='#') Для корпоративных клиентов
 		.mobile-menu__up
 			a.mobile-menu__link(href="#") Частным<br> клиентам
 			a.mobile-menu__link.mobile-menu__link--active(href="#") Корпоративным<br> клиентам

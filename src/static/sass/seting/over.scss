@@ -43,6 +43,39 @@
     }
   }
 
+  &--hover {
+    .navigation-dropdown {
+      right: 0;
+      z-index: 20;
+      text-align: right;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 15px;
+        bottom: 100%;
+        
+        // background-color: green;
+      }
+      @media (max-width: 767px) {
+        width: auto;
+        left: -10px;
+        right: -10px;
+      }
+    }
+    &:hover {
+      .navigation-dropdown {
+        transform: translateY(14px);
+        opacity: 1;
+        pointer-events: unset;
+        @media (max-width: 767px) {
+          transform: translateY(2px);
+        }
+      }
+    }
+  }
+
   &__text {
     font-weight: bold;
     font-size: 11px;

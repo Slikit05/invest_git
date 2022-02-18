@@ -204,7 +204,8 @@
   }
 
   .navigation__item--dropdown:hover .navigation-dropdown,
-  .navigation__item--more:hover .navigation-dropdown {
+  .navigation__item--more:hover .navigation-dropdown,
+  .btn-block--hover:hover .navigation-dropdown {
     display: block;
   }
 
